@@ -6,11 +6,22 @@
   "scripts": {
     "test": "npm test"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pastorsj/PersonalWebsite.git"
+  },
   "keywords": [
     "pastoriza",
     "personal",
     "mean"
   ],
   "author": "spastoriza",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-resource": "^1.5.0",
+    "bootstrap": "^3.3.6",
+    "express": "^4.13.4",
+    "jquery": "^2.2.1"
+  }
 }
