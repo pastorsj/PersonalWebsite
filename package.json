@@ -1,0 +1,16 @@
+{
+  "name": "personalwebsite",
+  "version": "1.0.0",
+  "description": "My personal website using the Mean stack",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "pastoriza",
+    "personal",
+    "mean"
+  ],
+  "author": "spastoriza",
+  "license": "MIT"
+}
