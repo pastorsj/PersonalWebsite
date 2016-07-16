@@ -1,22 +1,58 @@
-<div class='main-component'>
+<div class='top-component'>
   <div id='main-title'>
     {{title}}
   </div>
+  <div id='subtitle'>
+    {{description}}
+  </div>
 </div>
-<nav class="blog-nav navbar navbar-full navbar-light">
-  <ul class="nav navbar-nav">
-    <li class="nav-item active">
-      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Food</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Health</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Science</a>
-    </li>
-  </ul>
-</nav>
-<router-outlet></router-outlet>
+<div>
+  <img class="rose-pic" src="images/rose-picture-1.jpg" alt="White Chapel">
+  <div class="display-project">
+    <div class='projects-header'>
+      Projects
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-3">
+        <a href="https://github.com/pastorsj/webdriverio-server" class="thumbnail">
+          <img src="images/frost_logo.png" alt="Ciena Blueplanet">
+        </a>
+      </div>
+      <div class="col-md-2 col-sm-2">
+        <a href="https://github.com/pastorsj/bannablog" class="thumbnail">
+          <img src="images/blog.png" alt="Blog">
+        </a>
+      </div>
+      <div class="col-md-2 col-sm-2">
+        <a href="https://github.com/pastorsj/PersonalWebsite" class="thumbnail">
+          <img src="images/angular-2.png" alt="Personal Website">
+        </a>
+      </div>
+      <div class="col-md-2 col-sm-2">
+        <a href="https://github.com/pastorsj/SaltyMunchkins" class="thumbnail">
+          <img src="images/munchkin.jpg" alt="Munchkins">
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-3">
+        <a href="https://github.com/pastorsj/Dont_Hate_Your_Roommate" class="thumbnail">
+          <img id="roommates" src="images/roommates.png" alt="Roommates">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="pic-1">
+  <img class="rose-pic" src="images/rose-picture-2.jpg" alt="Speed Lake">
+  <div id='photography' class='display-project'>
+    <div class='projects-header'>
+      Photography
+    </div>
+    <a href="https://www.flickr.com/photos/sampastorizaphotos/">
+      <img src="images/flickr.png" alt="Some other photo">
+    </a>
+  </div>
+</div>
+<div id="pic-2">
+  <img class="rose-pic" src="images/rose-picture-3.jpg" alt="Another photo">
+  <div id='resume' class='component'></div>
+</div>

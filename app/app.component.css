@@ -1,34 +1,68 @@
-.main-component {
+.rose-pic {
+  width: 100%;
+  left: 0px;
+  right: 0px;
+}
+
+.top-component {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #7ed1c5;
-  width: 90%;
-  height: 300px;
-  margin: 5% 5% 0 5%;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  text-align: center;
 }
 
 #main-title {
-  text-align: center;
+  color:  #000000;
   font-size: 40pt;
-  color: whitesmoke;
-  text-shadow: 2px 2px 4px #000000;
+  opacity: 87%;
 }
 
 #subtitle {
-  font-size: 14pt;
-  padding-top: 10px;
+  color:  #000000;
+  font-size: 30pt;
+  opacity: 54%
 }
 
-.blog-nav {
+#photography {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #97dbd1;
-  margin: 0 5% 3% 5%;
-  border-radius: 0 0 5px 5px;
+}
+
+.row div a img {
+  width: 150px;
+  height: 150px;
+}
+
+#roommates {
+  width: 230px;
+}
+
+.projects-header {
+  text-align: center;
+  font-size: 30pt;
+  color: ghostwhite;
+  opacity: 54%;
+  padding-bottom: 30px;
+}
+
+.display-project {
+  position: relative;
+  top: -650px;
+  bottom: 0px;
+  background: rgb(34,34,34);
+  background: rgba(34,34,34,0.75);
+  padding: 50px;
+}
+
+#pic-1 {
+  position: relative;
+  top: -400px;
+}
+
+#pic-2 {
+  position: relative;
+  top: -900px;
 }

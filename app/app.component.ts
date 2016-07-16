@@ -1,8 +1,5 @@
 import { Component }          from '@angular/core';
-import { ROUTER_DIRECTIVES }  from '@angular/router';
 import { Helpers } from "./shared/helpers";
-
-// import { BlogService }        from './blog.service';
 
 let componentName = 'app'
 
@@ -10,11 +7,9 @@ let componentName = 'app'
   selector: componentName,
   templateUrl: Helpers.getTemplatePath(componentName),
   styleUrls: [Helpers.getStylePath(componentName)],
-  directives: [ROUTER_DIRECTIVES],
-  // providers: [
-  //   BlogService,
-  // ]
 })
+
 export class AppComponent {
-  title = "Numbers Don't Define Us";
+  title = 'I am Sam Pastoriza, a Software Engineering at Ciena';
+  description = 'I am rising senior at Rose-Hulman Institute of Technology and I love website development, photography, golf and family'
 }
