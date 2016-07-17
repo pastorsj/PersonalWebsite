@@ -10,6 +10,6 @@ let componentName = 'app'
 })
 
 export class AppComponent {
-  title = 'I am Sam Pastoriza, a Software Engineering at Ciena';
-  description = 'I am rising senior at Rose-Hulman Institute of Technology and I love website development, photography, golf and family'
+  title = 'Sam Pastoriza';
+  description = 'A rising senior at Rose-Hulman Institute of Technology with interests in website development, photography and golf'
 }

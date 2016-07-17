@@ -1,39 +1,100 @@
-.rose-pic {
-  width: 100%;
-  left: 0px;
-  right: 0px;
-}
-
-.top-component {
+.title-component {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-family: fantasy;
+  color: antiquewhite;
+  position: relative;
+  top: 200px;
+  margin-bottom: -300px;
+  z-index: 10;
+  background: rgb(34,34,34);
+  background: rgba(34,34,34,0.75);
 }
 
 #main-title {
-  color:  #000000;
-  font-size: 40pt;
-  opacity: 87%;
+  font-size: 30pt;
 }
 
 #subtitle {
-  color:  #000000;
-  font-size: 30pt;
-  opacity: 54%
+  font-size: 20pt;
+  width: 70%;
 }
 
-#photography {
+.carousel-inner img {
+  position: relative;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+}
+
+.carousel-inner {
+  height: 1000px;
+}
+
+#rose-picture-1 {
+  background: url(../images/rose-picture-1.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#rose-picture-2 {
+  background: url(../images/rose-picture-2.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#rose-picture-3 {
+  background: url(../images/rose-picture-3.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.rose-pic {
+  height: 1000px;
+}
+
+.display-project {
+  position: relative;
+  top: 300px;
+  background: rgb(34,34,34);
+  background: rgba(34,34,34,0.75);
+  padding: 40px;
+}
+
+.thumbnail {
+  background: rgb(34,34,34);
+  background: rgba(34,34,34,0.75);
+}
+
+.contrain-photo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.row div a img {
+.contrain-photo-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-padding {
+  margin: 20px; 
+}
+
+.a-picture {
   width: 150px;
   height: 150px;
+}
+
+#flickr {
+  width: 250px;
+  height: 200px; 
 }
 
 #roommates {
@@ -46,23 +107,4 @@
   color: ghostwhite;
   opacity: 54%;
   padding-bottom: 30px;
-}
-
-.display-project {
-  position: relative;
-  top: -650px;
-  bottom: 0px;
-  background: rgb(34,34,34);
-  background: rgba(34,34,34,0.75);
-  padding: 50px;
-}
-
-#pic-1 {
-  position: relative;
-  top: -400px;
-}
-
-#pic-2 {
-  position: relative;
-  top: -900px;
 }
