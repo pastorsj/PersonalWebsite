@@ -2,18 +2,18 @@ export class Helpers{
     // Gets template path for given component
     public static getTemplatePath(name: string){
         if(name === "app"){
-            return "app/" + name + ".component.html"
+            return "/templates/app/" + name + ".component.html"
         }else{
-            return "app/components/" + name + "/" + name + ".component.html";
+            return "/templates/app/components/" + name + "/" + name + ".component.html";
         }
     }
 
     // Get style path
     public static getStylePath(name: string){
         if(name === "app"){
-            return "app/" + name + ".component.css"
+            return "styles/app/" + name + ".component.css"
         }else{
-            return "app/components/" + name + "/" + name + ".component.css";
+            return "styles/app/components/" + name + "/" + name + ".component.css";
         }
     }
 }

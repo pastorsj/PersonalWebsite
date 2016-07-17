@@ -1,18 +1,13 @@
 {
-  "name": "bannablog",
+  "name": "personal-website",
   "version": "1.0.0",
-  "description": "A simple blogging website",
-  "main": "app.js",
+  "description": "My Personal Website",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pastorsj/bannablog.git"
+    "url": "git+https://github.com/pastorsj/PersonalWebsite.git"
   },
   "scripts": {
-    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
-    "lite": "lite-server",
     "postinstall": "typings install",
-    "tsc": "tsc",
-    "tsc:w": "tsc -w",
     "typings": "typings"
   },
   "dependencies": {
@@ -24,24 +19,19 @@
     "@angular/platform-browser": "2.0.0-rc.4",
     "@angular/platform-browser-dynamic": "2.0.0-rc.4",
     "@angular/router": "3.0.0-beta.1",
-    "@angular/router-deprecated": "2.0.0-rc.2",
     "@angular/upgrade": "2.0.0-rc.4",
-    "angular2-in-memory-web-api": "0.0.14",
-    "bootstrap": "^3.3.6",
-    "core-js": "^2.4.0",
-    "i": "^0.3.5",
-    "ng2-bootstrap": "^1.0.17",
-    "npm": "^3.10.5",
     "reflect-metadata": "^0.1.3",
     "rxjs": "5.0.0-beta.6",
-    "systemjs": "0.19.27",
     "zone.js": "^0.6.12"
   },
   "devDependencies": {
-    "concurrently": "^2.0.0",
-    "lite-server": "^2.2.0",
+    "copy-webpack-plugin": "^3.0.1",
+    "express": "^4.14.0",
+    "source-map-loader": "^0.1.5",
+    "ts-loader": "^0.8.2",
     "typescript": "^1.8.10",
-    "typings": "^1.0.4"
+    "webpack": "^1.13.1",
+    "webpack-livereload-plugin": "^0.8.1"
   },
   "keywords": [
     "blog",
