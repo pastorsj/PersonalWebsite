@@ -1,6 +1,6 @@
 node_modules/
-/**/*.js
-/**/*.map
+main.js
+main.js.map
 npm-debug.log
 .DS_Store
 typings
