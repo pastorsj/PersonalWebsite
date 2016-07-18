@@ -10,11 +10,11 @@ sudo apt-get install -y \
     nginx \
     tmux
 
-wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
+sudo wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
 source ~/.profile
 . ~/.nvm/nvm.sh
 
-nvm install 5.11.0
+sudo nvm install 5.11.0
 
 JAVA_URL=http://download.oracle.com/otn-pub/java/jdk/8u65-b17/jdk-8u65-linux-x64.tar.gz
 sudo mkdir -p /usr/lib/jvm
