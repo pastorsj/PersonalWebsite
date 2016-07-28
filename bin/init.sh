@@ -1,20 +1,19 @@
 set -ex
 { # this ensures the entire script is downloaded
 
-sudo apt-get update
-sudo apt-get install -y \
-    build-essential \
-    curl \
-    git \
-    wget \
-    nginx \
-    tmux
+sudo yum update
+sudo yum install git
 
-sudo wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
 source ~/.profile
 . ~/.nvm/nvm.sh
 
-sudo nvm install 5.11.0
+nvm install 5.11.0
+
+npm install -g typings webpack
+
+modprobe ip_tables
+iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to 3000
 
 JAVA_URL=http://download.oracle.com/otn-pub/java/jdk/8u65-b17/jdk-8u65-linux-x64.tar.gz
 sudo mkdir -p /usr/lib/jvm

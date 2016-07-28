@@ -1,6 +1,6 @@
 {
   "name": "personal-website",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "My Personal Website",
   "repository": {
     "type": "git",
@@ -41,7 +41,7 @@
   "author": "pastorsj",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pastorsj/bannablog/issues"
+    "url": "https://github.com/pastorsj/PersonalWebsite/issues"
   },
-  "homepage": "https://github.com/pastorsj/bannablog#readme"
+  "homepage": "https://github.com/pastorsj/PersonalWebsite#readme"
 }
