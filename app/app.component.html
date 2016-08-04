@@ -1,110 +1,82 @@
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <div class='title-component'>
-    <div id='main-title'>
-      {{title}}
-    </div>
-    <div id='subtitle'>
-      {{description}}
-    </div>
-  </div>
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-    <li data-target="#myCarousel" data-slide-to="4"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="../../images/carousel/oc-1.jpg" alt="Olympic Club 1">
-    </div>
-
-    <div class="item">
-      <img src="../../images/carousel/oc-2.jpg" alt="Olympic Club 2">
-    </div>
-
-    <div class="item">
-      <img src="../../images/carousel/oc-3.jpg" alt="Olympic Club 3">
-    </div>
-
-    <div class="item">
-      <img src="../../images/carousel/rh-1.jpg" alt="Rose-Hulman 1">
-    </div>
-
-     <div class="item">
-      <img src="../../images/carousel/rh-2.jpg" alt="Rose-Hulman 2">
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-<div class="rose-pic" id="rose-picture-1">
-  <div class="display-project">
-    <div class='projects-header'>
-      Projects
-    </div>
-    <div class="row">
-      <div class="col-md-3 col-sm-3">
-        <a href="https://github.com/pastorsj/webdriverio-server" class="thumbnail">
-          <img class="a-picture" src="../../images/frost_logo.png" alt="Ciena Blueplanet">
-        </a>
-      </div>
-      <div class="col-md-2 col-sm-2">
-        <a href="https://github.com/pastorsj/bannablog" class="thumbnail">
-          <img class="a-picture" src="../../images/blog.png" alt="Blog">
-        </a>
-      </div>
-      <div class="col-md-2 col-sm-2">
-        <a href="https://github.com/pastorsj/PersonalWebsite" class="thumbnail">
-          <img class="a-picture" src="../../images/angular-2.png" alt="Personal Website">
-        </a>
-      </div>
-      <div class="col-md-2 col-sm-2">
-        <a href="https://github.com/pastorsj/SaltyMunchkins" class="thumbnail">
-          <img class="a-picture" src="../../images/munchkin.jpg" alt="Munchkins">
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-3">
-        <a href="https://github.com/pastorsj/Dont_Hate_Your_Roommate" class="thumbnail">
-          <img class="a-picture" id="roommates" src="../../images/roommates.png" alt="Roommates">
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="rose-pic" id="rose-picture-2">
-  <div class="contrain-photo display-project">
-    <div class='projects-header'>
-      Photography
-    </div>
-    <a href="https://www.flickr.com/photos/sampastorizaphotos/" class="thumbnail">
-      <img id="flickr" src="../../images/flickr.png" alt="My Flickr Website">
-    </a>
-  </div>
-</div>
-<div class="rose-pic" id="rose-picture-3">
-  <div class="contrain-photo display-project">
-    <div class='projects-header'>
-      Resume
-    </div>
-    <div class="contrain-photo-row">
-      <a class="thumbnail photo-padding" href="https://resume.github.io/?pastorsj">
-        <img class="a-picture" src="../../images/github-logo.png" alt="My GitHub Resume">
-      </a>
-      <a class="thumbnail photo-padding" href="images/Resume.pdf">
-        <img class="a-picture" src="../../images/rose-seal.png" alt="My Resume">
-      </a>
-    </div>
-  </div>
+<div class="wrapper">
+		<div class="header header-filter" style="background-image: url('../../assets/img/rose-picture-2.jpg');"></div>
+		<div class="main main-raised">
+			<div class="profile-content">
+	            <div class="container">
+                <div class="row">
+	                    <div class="profile">
+	                        <div class="avatar">
+	                            <img src="../../assets/img/rose-seal.png" alt="Rose Image" class="img-circle img-responsive img-raised">
+	                        </div>
+	                        <div class="name">
+	                            <h3 class="title">{{name}}</h3>
+								              <h6>{{work}}</h6>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="description text-center">
+                        <p>{{description}}</p>
+	                </div>
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3">
+							<div class="profile-tabs">
+			                    <div class="nav-align-center">
+									<ul class="nav nav-pills" role="tablist">
+										<li class="active">
+											<a href="#photography" role="tab" data-toggle="tab">
+												<i class="material-icons">camera</i>
+												Photography
+											</a>
+										</li>
+										<li>
+				                            <a href="#projects" role="tab" data-toggle="tab">
+												<i class="material-icons">palette</i>
+												Experience
+				                            </a>
+				                        </li>
+				                        <li>
+				                            <a href="#resume" role="tab" data-toggle="tab">
+												<i class="material-icons">favorite</i>
+				                                Education
+				                            </a>
+				                        </li>
+				                    </ul>
+									<div class="tab-content gallery">
+										<div class="tab-pane active" id="photography">
+											<div class="row center-photo">
+												<div class="col-md-8">
+													<img src="../assets/img/flickr.png" class="img-rounded img-responsive" />
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane text-center" id="projects">
+											<div class="row">
+												<div class="col-md-6">
+													<img src="../assets/img/angular-2.png" class="img-rounded img-responsive" />
+													<img src="../assets/img/roommates.png" class="img-rounded img-responsive" />
+												</div>
+												<div class="col-md-6">
+													<img src="../assets/img/frost_logo.png" class="img-rounded img-responsive" />
+													<img src="../assets/img/blog.png" class="img-rounded img-responsive" />
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane text-center" id="resume">
+											<div class="row center-photo">
+												<div class="col-md-5">
+													<img src="../assets/img/github-logo.png" class="img-rounded img-responsive" />
+												</div>
+												<div class="col-md-5">
+													<img src="../assets/img/rose-seal.png" class="img-rounded img-responsive" />
+												</div>
+											</div>
+										</div>
+									</div>
+			                    </div>
+							</div>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
 </div>

@@ -6,10 +6,11 @@ let componentName = 'app'
 @Component({
   selector: componentName,
   templateUrl: Helpers.getTemplatePath(componentName),
-  styleUrls: [Helpers.getStylePath(componentName)],
+  styleUrls: [Helpers.getStylePath(componentName)]
 })
 
 export class AppComponent {
-  title = 'Sam Pastoriza';
+  name = 'Sam Pastoriza'
+  work = 'Web design taken to the next level.'
   description = 'A rising senior at Rose-Hulman Institute of Technology with interests in website development, photography and golf'
 }

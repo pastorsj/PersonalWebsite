@@ -43,16 +43,12 @@ module.exports = {
                 to: "./dist/styles/"
             },
             {
-                from: "./app/index.html",
-                to: "./dist/"
-            },
-            {
                 from: "./app/assets/",
                 to: "./dist/assets/"
             },
             {
-                from: "./images/",
-                to: "./dist/images"
+                from: "./assets",
+                to: "./dist/assets"
             }
         ]),
         new liveReload()
