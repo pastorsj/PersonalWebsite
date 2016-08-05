@@ -1,12 +1,10 @@
 .center-photo {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-@media screen and (max-width: 1000px) {
-    .resizable img {
-      width: 50%;
-    }
+.resizable img {
+  width: 75%;
 }
