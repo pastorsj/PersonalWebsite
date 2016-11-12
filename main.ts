@@ -1,6 +1,5 @@
-// The usual bootstrapping imports
-import { bootstrap } from '@angular/platform-browser-dynamic';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app/app.module';
 
-import { AppComponent } from './app/app.component';
-
-bootstrap(AppComponent).catch(err => console.error(err));
+const platform = platformBrowserDynamic();
+platform.bootstrapModule(AppModule);

@@ -1,0 +1,10 @@
+.center-photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.resizable img {
+  width: 75%;
+}
