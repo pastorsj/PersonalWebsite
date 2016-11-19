@@ -4,5 +4,6 @@
     "**/*.js": { "when": "$(basename).ts"},
     "**/*.map": true
   },
-  "eslint.enable": false
+"eslint.enable": false,
+"typescript.tsdk": "./node_modules/typescript/lib"
 }
