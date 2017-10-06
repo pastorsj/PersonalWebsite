@@ -14,16 +14,16 @@ import express from 'express';
 
 const app = express();
 
-const privateKey = fs.readFileSync(path.join(__dirname, '/sslcert/key.pem'), 'utf8');
-const certificate = fs.readFileSync(path.join(__dirname, '/sslcert/certificate.pem'), 'utf8');
+const privateKey = fs.readFileSync(process.env.PRIVATE_KEY, 'utf8');
+const certificate = fs.readFileSync(process.env.CERTIFICATE, 'utf8');
 const credentials = {key: privateKey, cert: certificate};
 
 /**
  * Get port from environment and store in Express.
  */
 
-const port = normalizePort(process.env.PORT || '3000');
-const httpsPort = normalizePort(process.env.PORT || '3001');
+const port = normalizePort(process.env.HTTP_PORT || '3000');
+const httpsPort = normalizePort(process.env.HTTPS_PORT || '3001');
 
 app.set('port', port);
 app.set('httpsPort', httpsPort);
