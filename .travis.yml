@@ -19,7 +19,8 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-  - ls $TRAVIS_BUILD_DIR
+  - rsync -avz $TRAVIS_BUILD_DIR/dist $USER@$HOST:/home/ubuntu
+  - rsync -av $TRAVIS_BUILD_DIR/server.dist.js $USER@$HOST:/home/ubuntu
   on:
     all_branches: true
 after_script:
