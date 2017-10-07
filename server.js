@@ -14,6 +14,9 @@ import express from 'express';
 
 const app = express();
 
+let server;
+let httpsServer;
+
 if (process.env.PRIVATE_KEY && process.env.CERTIFICATE) {
     const privateKey = fs.readFileSync(process.env.PRIVATE_KEY, 'utf8');
     const certificate = fs.readFileSync(process.env.CERTIFICATE, 'utf8');
@@ -22,7 +25,7 @@ if (process.env.PRIVATE_KEY && process.env.CERTIFICATE) {
 
     app.set('httpsPort', httpsPort);
 
-    const httpsServer = https.createServer(credentials, app);
+    httpsServer = https.createServer(credentials, app);
 
     httpsServer.listen(httpsPort);
     httpsServer.on('error', onError);
@@ -47,7 +50,7 @@ app.use((req, res) => {
  * Create HTTP/S server.
  */
 
-const server = http.createServer(app);
+server = http.createServer(app);
 
 /**
  * Listen on provided port, on all network interfaces.
@@ -111,10 +114,4 @@ function onListening() {
     var addr = server.address();
     var bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port;
     console.log('Http server listening on ' + bind);
-}
-
-function onListeningHttps() {
-    var addr = httpsServer.address();
-    var bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port;
-    console.log('Https server listening on ' + bind);
 }
