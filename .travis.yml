@@ -19,7 +19,7 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-  - scp -o "StrictHostKeyChecking no" $TRAVIS_BUILD_DIR/server.dist.js $USER@$HOST:/home/ubuntu
+  - ls
   on:
     all_branches: true
 after_script:
