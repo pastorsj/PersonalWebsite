@@ -1,0 +1,1 @@
+forever restart server.dist.js
