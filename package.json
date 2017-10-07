@@ -9,7 +9,7 @@
     "predeploy": "npm run build-prod && npm run precache && npm run build-server",
     "build-prod": "ng build --prod --aot",
     "precache": "sw-precache --root=dist --verbose",
-    "build-server": "babel server.js --out-file server.dist.js",
+    "build-server": "babel server.js --out-file ./server.dist.js",
     "test": "echo Testing",
     "lint": "ng lint",
     "e2e": "ng e2e",
