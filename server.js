@@ -28,7 +28,7 @@ const httpsPort = normalizePort(process.env.HTTPS_PORT || '3001');
 app.set('port', port);
 app.set('httpsPort', httpsPort);
 
-app.use(express.static("dist"));
+app.use(express.static(__dirname + "dist"));
 
 app.use((req, res) => {
     res.sendFile(__dirname + "/dist/index.html");

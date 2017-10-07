@@ -14,7 +14,6 @@ install:
 - npm install
 before_deploy:
 - npm run predeploy
-- ls
 deploy:
   provider: script
   skip_cleanup: true
@@ -22,7 +21,7 @@ deploy:
   on:
     all_branches: true
 after_deploy:
--  ssh $USER@$HOST:/home/ubuntu "forever restart server.dist.js"
+- ssh $USER@$HOST:/home/ubuntu "forever restart server.dist.js"
 after_script:
 - eval "$(ssh-agent -k)"
 - echo "Killed SSH Agent"
