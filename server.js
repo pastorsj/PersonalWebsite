@@ -50,7 +50,7 @@ app.use((req, res) => {
  * Create HTTP/S server.
  */
 
-const server = http.createServer(app);
+server = http.createServer(app);
 
 /**
  * Listen on provided port, on all network interfaces.
