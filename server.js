@@ -50,7 +50,7 @@ app.use((req, res) => {
  * Create HTTP/S server.
  */
 
-server = http.createServer(app);
+const server = http.createServer(app);
 
 /**
  * Listen on provided port, on all network interfaces.
@@ -114,4 +114,10 @@ function onListening() {
     var addr = server.address();
     var bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port;
     console.log('Http server listening on ' + bind);
+}
+
+function onListeningHttps() {
+    var addr = httpsServer.address();
+    var bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port;
+    console.log('Https server listening on ' + bind);
 }
