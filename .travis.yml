@@ -21,7 +21,6 @@ deploy:
   on:
     all_branches: true
 after_script:
-- ssh $USER@$HOST:/home/ubuntu "forever restart server.dist.js"
 - eval "$(ssh-agent -k)"
 - echo "Killed SSH Agent"
 - rm -rf deploy_key.pem
