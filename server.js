@@ -14,32 +14,43 @@ import express from 'express';
 
 const app = express();
 
-const privateKey = fs.readFileSync(path.join(__dirname, '/sslcert/key.pem'), 'utf8');
-const certificate = fs.readFileSync(path.join(__dirname, '/sslcert/certificate.pem'), 'utf8');
-const credentials = {key: privateKey, cert: certificate};
+let server;
+let httpsServer;
+
+if (process.env.PRIVATE_KEY && process.env.CERTIFICATE) {
+    const privateKey = fs.readFileSync(process.env.PRIVATE_KEY, 'utf8');
+    const certificate = fs.readFileSync(process.env.CERTIFICATE, 'utf8');
+    const credentials = {key: privateKey, cert: certificate};
+    const httpsPort = normalizePort(process.env.HTTPS_PORT || '3001');
+
+    app.set('httpsPort', httpsPort);
+
+    httpsServer = https.createServer(credentials, app);
+
+    httpsServer.listen(httpsPort);
+    httpsServer.on('error', onError);
+    httpsServer.on('listening', onListeningHttps);
+}
 
 /**
  * Get port from environment and store in Express.
  */
 
-const port = normalizePort(process.env.PORT || '3000');
-const httpsPort = normalizePort(process.env.PORT || '3001');
+const port = normalizePort(process.env.HTTP_PORT || '3000');
 
 app.set('port', port);
-app.set('httpsPort', httpsPort);
 
-app.use(express.static("dist"));
+app.use(express.static(path.join(__dirname, "dist")));
 
 app.use((req, res) => {
-    res.sendFile(__dirname + "/dist/index.html");
+    res.sendFile(path.join(__dirname, "dist", "index.html"));
 })
 
 /**
  * Create HTTP/S server.
  */
 
-const server = http.createServer(app);
-const httpsServer = https.createServer(credentials, app);
+server = http.createServer(app);
 
 /**
  * Listen on provided port, on all network interfaces.
@@ -49,9 +60,6 @@ server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
 
-httpsServer.listen(httpsPort);
-httpsServer.on('error', onError);
-httpsServer.on('listening', onListeningHttps);
 
 /**
  * Normalize a port into a number, string, or false.

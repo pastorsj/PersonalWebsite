@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name = 'Sam Pastoriza'
   work = 'Web design taken to the next level.'
-  description = 'A rising senior at Rose-Hulman Institute of Technology with interests in website development, photography and golf'
+  description = 'A Software Engineer at Digital Management, LLC with interests in Website Development, Photography and Golf'
 }
