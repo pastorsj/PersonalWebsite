@@ -20,9 +20,8 @@ deploy:
   script: scp -o "StrictHostKeyChecking no" -r $TRAVIS_BUILD_DIR/dist $TRAVIS_BUILD_DIR/server.dist.js $USER@$HOST:/home/ubuntu
   on:
     all_branches: true
-after_deploy:
-- ssh $USER@$HOST:/home/ubuntu "forever restart server.dist.js"
 after_script:
+- ssh $USER@$HOST:/home/ubuntu "forever restart server.dist.js"
 - eval "$(ssh-agent -k)"
 - echo "Killed SSH Agent"
 - rm -rf deploy_key.pem
