@@ -1,96 +1,30 @@
-<div class="wrapper">
-		<div class="header header-filter" style="background-image: url('../../assets/img/rose-bg.jpg');"></div>
-		<div class="main main-raised">
-			<div class="profile-content">
-	            <div class="container">
+<div class="profile-page">
+    <div class="page-header header-filter" style="background-image: url('../../assets/img/rose-bg.jpg');"></div>
+    <div class="main main-raised">
+        <div class="profile-content">
+            <div class="container">
                 <div class="row">
-	                    <div class="profile">
-	                        <div class="avatar">
-	                            <img src="../../assets/img/Logo.png" alt="Rose Image" class="img-circle img-responsive img-raised">
-	                        </div>
-	                        <div class="name">
-	                            <h3 class="title">{{name}}</h3>
-								              <h6>{{work}}</h6>
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="description text-center">
-                        <p>{{description}}</p>
-	                </div>
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3">
-							<div class="profile-tabs">
-			                    <div class="nav-align-center">
-									<ul class="nav nav-pills" role="tablist">
-										<li class="active">
-											<a href="#photography" role="tab" data-toggle="tab">
-												<i class="material-icons">camera</i>
-												Photography
-											</a>
-										</li>
-										<li>
-				                            <a href="#projects" role="tab" data-toggle="tab">
-												<i class="material-icons">code</i>
-												Experience
-				                            </a>
-				                        </li>
-				                        <li>
-				                            <a href="#resume" role="tab" data-toggle="tab">
-												<i class="material-icons">class</i>
-				                                Education
-				                            </a>
-				                        </li>
-				                    </ul>
-									<div class="tab-content gallery">
-										<div class="tab-pane active" id="photography">
-											<div class="row center-photo">
-												<div class="col-md-8">
-													<a href="https://www.flickr.com/photos/sampastorizaphotos">
-														<img src="../assets/img/flickr.png" class="img-rounded img-responsive" />
-													</a>
-												</div>
-											</div>
-										</div>
-										<div class="tab-pane" id="projects">
-											<div class="row resizable">
-												<div class="col-md-6">
-													<a href="https://github.com/pastorsj/pastorsj.github.io">
-														<img src="../assets/img/angular-2.png" class="img-rounded img-responsive" />
-													</a>
-													<a href="https://github.com/pastorsj/Dont_Hate_Your_Roommate">
-														<img src="../assets/img/roommates.png" class="img-rounded img-responsive" />
-													</a>
-												</div>
-												<div class="col-md-6">
-													<a href="https://github.com/pastorsj/webdriverio-server">
-														<img src="../assets/img/frost_logo.png" class="img-rounded img-responsive" />
-													</a>
-													<a href="https://github.com/pastorsj/pastorsj.github.io">
-														<img src="../assets/img/blog.png" class="img-rounded img-responsive" />
-													</a>
-												</div>
-											</div>
-										</div>
-										<div class="tab-pane" id="resume">
-											<div class="row center-photo">
-												<div class="col-md-5">
-													<a href="http://resume.github.io/?pastorsj">
-														<img src="../assets/img/github-logo.png" class="img-rounded img-responsive" />
-													</a>
-												</div>
-												<div class="col-md-5">
-													<a href="../assets/Resume.pdf">
-														<img src="../assets/img/rose-seal.png" class="img-rounded img-responsive" />
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-			                    </div>
-							</div>
-						</div>
-					</div>
-	            </div>
-			</div>
-		</div>
+                    <div class="col-md-6 ml-auto mr-auto">
+                        <div class="profile">
+                            <div class="avatar">
+                                <img src="assets/img/Logo.png" alt="Rose Image" class="img-raised rounded-circle img-fluid">
+                            </div>
+                            <div class="name">
+                                <h3 class="title">{{name}}</h3>
+                                            <h6>{{work}}</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="description text-center">
+                    <p>{{description}}</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 ml-auto mr-auto">
+                        <portfolio></portfolio>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

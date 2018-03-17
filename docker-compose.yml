@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  personal-website:
+    image: personal-website
+    build: .
+    environment:
+      NODE_ENV: production
+    build:
+      context: .
+      args:
+          WORKING_DIR: /usr/src/app
+    command: npm start
+    ports:
+      - 4200:4200
+    restart: always

@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -9,6 +9,7 @@
     "predeploy": "npm run build-prod && && npm run build-server",
     "build-prod": "ng build --prod",
     "build-server": "babel server.js --out-file ./server.dist.js",
+    "docker": "docker-compose -f docker-compose.yml up --build --force-recreate",
     "test": "echo Testing",
     "lint": "ng lint",
     "e2e": "ng e2e",
