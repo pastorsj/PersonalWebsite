@@ -12,5 +12,5 @@ services:
           WORKING_DIR: /usr/src/app
     command: npm start
     ports:
-      - 3000:3000
+      - 4200:4200
     restart: always

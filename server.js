@@ -19,7 +19,7 @@ let server;
  * Get port from environment and store in Express.
  */
 
-const port = normalizePort(process.env.HTTP_PORT || '3000');
+const port = normalizePort(process.env.HTTP_PORT || '4200');
 
 app.set('port', port);
 
