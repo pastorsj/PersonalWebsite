@@ -29,3 +29,5 @@ nvm install node
 
 sudo apt-get install openssl
 sudo openssl dhparam -out dhparam.pem 2048
+
+sudo service docker start
