@@ -1,13 +1,12 @@
 /*
 Simple static file server that will send index.html if the file is not found. Useful for developing angular apps.
-*/ 
+*/
 
 /**
  * Module dependencies.
  */
 
 import http from 'http';
-import https from 'https';
 import fs from 'fs';
 import path from 'path';
 import express from 'express';
@@ -15,22 +14,6 @@ import express from 'express';
 const app = express();
 
 let server;
-let httpsServer;
-
-if (process.env.PRIVATE_KEY && process.env.CERTIFICATE) {
-    const privateKey = fs.readFileSync(process.env.PRIVATE_KEY, 'utf8');
-    const certificate = fs.readFileSync(process.env.CERTIFICATE, 'utf8');
-    const credentials = {key: privateKey, cert: certificate};
-    const httpsPort = normalizePort(process.env.HTTPS_PORT || '3001');
-
-    app.set('httpsPort', httpsPort);
-
-    httpsServer = https.createServer(credentials, app);
-
-    httpsServer.listen(httpsPort);
-    httpsServer.on('error', onError);
-    httpsServer.on('listening', onListeningHttps);
-}
 
 /**
  * Get port from environment and store in Express.
@@ -114,10 +97,4 @@ function onListening() {
     var addr = server.address();
     var bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port;
     console.log('Http server listening on ' + bind);
-}
-
-function onListeningHttps() {
-    var addr = httpsServer.address();
-    var bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port;
-    console.log('Https server listening on ' + bind);
 }
