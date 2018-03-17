@@ -8,7 +8,7 @@
     "build": "ng build",
     "predeploy": "npm run build-prod && npm run build-server",
     "build-prod": "ng build --prod",
-    "build-server": "babel server.js --out-file ./server.dist.js",
+    "build-server": "babel server.js --out-file ./server.min.js",
     "docker": "docker-compose -f docker-compose.yml up --build --force-recreate",
     "test": "echo Testing",
     "lint": "ng lint",

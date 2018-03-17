@@ -30,4 +30,9 @@ nvm install node
 sudo apt-get install openssl
 sudo openssl dhparam -out dhparam.pem 2048
 
-sudo service docker start
+# Generate the initial certificate
+sudo add-apt-repository ppa:certbot/certbot
+sudo apt-get update
+sudo apt-get install python-certbot-nginx
+sudo certbot --nginx -d sampastoriza.com -d www.sampastoriza.com
+sudo certbot renew --dry-run
