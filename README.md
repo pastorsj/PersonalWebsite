@@ -11,3 +11,6 @@ sudo service docker start
 sudo usermod -a -G docker $USER
 sudo reboot
 ```
+
+## Updates
+Considering trying to deploy using cloudfront and s3. https://medium.com/better-programming/deploying-an-angular-7-application-to-aws-s3-cloudfront-serving-https-requests-f59a806c57b2
