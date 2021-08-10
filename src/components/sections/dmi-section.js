@@ -26,92 +26,116 @@ const DmiSection = () => {
               I was a software consultant for 4 years with DMI specializing in commerical web application development.
             </Text>
             <br />
-            <Flex>
-              <Text>Experience</Text>
-              <Text>Projects</Text>
-              <Flex flex>
-                <StaticImage
-                  style={{
-                    width: 'auto',
-                    height: 'auto',
-                    maxHeight: '100px',
-                    maxWidth: '130px'
-                  }}
-                  alt="Allison Transmission Logo"
-                  src={'../../images/allison-transmission-logo.png'}
-                />
-                <StaticImage
-                  style={{
-                    width: 'auto',
-                    height: 'auto',
-                    maxWidth: '100px',
-                    maxHeight: '100px'
-                  }}
-                  alt="Liberty Mutual Logo"
-                  src={'../../images/liberty-mutual-logo.png'}
-                />
-                <StaticImage
-                  style={{
-                    width: 'auto',
-                    height: 'auto',
-                    maxWidth: '100px',
-                    maxHeight: '100px'
-                  }}
-                  alt="KAR Global Logo"
-                  src={'../../images/kar-global-logo.png'}
-                />
+            <Flex flexDirection="column">
+              <Text fontSize="2xl">Experience</Text>
+              <Flex flexDirection="row">
+                <Flex flexDirection="column" justifyContent="center">
+                  <Text fontSize="xl">Projects</Text>
+                  <Flex flexDirection="row" flexWrap="wrap">
+                    <a href="https://www.allisontransmission.com/">
+                      <StaticImage
+                        style={{
+                          width: 'auto',
+                          height: 'auto',
+                          maxHeight: '100px',
+                          maxWidth: '130px'
+                        }}
+                        alt="Allison Transmission Logo"
+                        src={'../../images/allison-transmission-logo.png'}
+                      />
+                    </a>
+                    <a href="https://www.libertymutual.com/">
+                      <StaticImage
+                        style={{
+                          width: 'auto',
+                          height: 'auto',
+                          maxWidth: '100px',
+                          maxHeight: '100px'
+                        }}
+                        alt="Liberty Mutual Logo"
+                        src={'../../images/liberty-mutual-logo.png'}
+                      />
+                    </a>
+                    <a href="https://www.karglobal.com/">
+                      <StaticImage
+                        style={{
+                          width: 'auto',
+                          height: 'auto',
+                          maxWidth: '100px',
+                          maxHeight: '100px'
+                        }}
+                        alt="KAR Global Logo"
+                        src={'../../images/kar-global-logo.png'}
+                      />
+                    </a>
+                  </Flex>
+                </Flex>
+                <Flex flexDirection="column">
+                  <Text fontSize="xl">Technologies</Text>
+                  <Flex flexDirection="row" flexWrap="wrap">
+                    <a href="https://aws.amazon.com/">
+                      <StaticImage
+                        style={{
+                          width: 'auto',
+                          height: 'auto',
+                          maxWidth: '100px',
+                          maxHeight: '100px'
+                        }}
+                        alt="Amazon Web Services Logo"
+                        src={'../../images/aws-logo.png'}
+                      />
+                    </a>
+                    <a href="https://angular.io/">
+                      <StaticImage
+                        style={{
+                          width: 'auto',
+                          height: 'auto',
+                          maxWidth: '100px',
+                          maxHeight: '100px'
+                        }}
+                        alt="Angular Logo"
+                        src={'../../images/angular-logo.png'}
+                      />
+                    </a>
+                    <a href="https://nodejs.org/en/">
+                      <StaticImage
+                        style={{
+                          width: 'auto',
+                          height: 'auto',
+                          maxWidth: '160px',
+                          maxHeight: '100px'
+                        }}
+                        alt="Node Logo"
+                        src={'../../images/node-logo.svg'}
+                      />
+                    </a>
+                    <a href="https://vuejs.org/">
+                      <StaticImage
+                        style={{
+                          width: 'auto',
+                          height: 'auto',
+                          maxWidth: '120px',
+                          maxHeight: '100px'
+                        }}
+                        alt="VueJS Logo"
+                        src={'../../images/vue-logo.png'}
+                      />
+                    </a>
+                    <a href="https://docs.microsoft.com/en-us/dotnet/csharp/">
+                      <StaticImage
+                        style={{
+                          width: 'auto',
+                          height: 'auto',
+                          maxWidth: '100px',
+                          maxHeight: '100px'
+                        }}
+                        alt="C# Logo"
+                        src={'../../images/c-sharp-logo.png'}
+                      />
+                    </a>
+                  </Flex>
+                </Flex>
               </Flex>
-              <Text>Technologies</Text>
-              <StaticImage
-                style={{
-                  width: 'auto',
-                  height: 'auto',
-                  maxWidth: '100px',
-                  maxHeight: '100px'
-                }}
-                alt="Amazon Web Services Logo"
-                src={'../../images/aws-logo.png'}
-              />
-              <StaticImage
-                style={{
-                  width: 'auto',
-                  height: 'auto',
-                  maxWidth: '100px',
-                  maxHeight: '100px'
-                }}
-                alt="Angular Logo"
-                src={'../../images/angular-logo.png'}
-              />
-              <StaticImage
-                style={{
-                  width: 'auto',
-                  height: 'auto',
-                  maxWidth: '100px',
-                  maxHeight: '100px'
-                }}
-                alt="Node Logo"
-                src={'../../images/node-logo.svg'}
-              />
-              <StaticImage
-                style={{
-                  width: 'auto',
-                  height: 'auto',
-                  maxWidth: '100px',
-                  maxHeight: '100px'
-                }}
-                alt="VueJS Logo"
-                src={'../../images/vue-logo.png'}
-              />
-              <StaticImage
-                style={{
-                  width: 'auto',
-                  height: 'auto',
-                  maxWidth: '100px',
-                  maxHeight: '100px'
-                }}
-                alt="C# Logo"
-                src={'../../images/c-sharp-logo.png'}
-              />
             </Flex>
           </Flex>
           <StaticImage

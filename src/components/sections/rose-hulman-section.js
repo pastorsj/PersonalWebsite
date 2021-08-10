@@ -30,7 +30,7 @@ const RoseHulmanSection = () => {
             <br />
             <Text>
               While at Rose-Hulman, I was a 4 year varsity athlete playing golf. I was recognized by the Golf Coaches
-              Associated of America as an All America Scholar in 2016. Golf has always been and continues to be a
+              Association of America as an All America Scholar in 2016. Golf has always been and continues to be a
               passion that I share with as many people as possible.
             </Text>
           </Flex>
