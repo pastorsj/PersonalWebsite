@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Flex, Spacer, Heading, Center, Link } from '@chakra-ui/react';
-import Footer from './footer';
+import Footer from './footer/footer';
 
-const Layout = ({ pageTitle, children }) => {
+const Layout = ({ children }) => {
   return (
     <div style={{ height: '100vh' }}>
       <Flex h="8vh">
