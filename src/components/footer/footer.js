@@ -10,7 +10,7 @@ const Footer = () => (
         <Flex alignItems="center">
           <StaticImage
             alt="Logo"
-            src={'../images/profile-picture.png'}
+            src={'../../images/profile-picture.png'}
             style={{
               maxHeight: '50px',
               maxWidth: '50px',

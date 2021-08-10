@@ -1,31 +1,73 @@
 import * as React from 'react';
-import { Flex, Spacer, Heading, Center, Link } from '@chakra-ui/react';
+import { Flex, Heading, Button, ButtonGroup } from '@chakra-ui/react';
 import Footer from './footer/footer';
+import { StaticImage } from 'gatsby-plugin-image';
+import { navigate } from 'gatsby';
 
 const Layout = ({ children }) => {
   return (
-    <div style={{ height: '100vh' }}>
-      <Flex h="8vh">
-        <Center w="100%">
-          <Heading textAlign="center" fontSize="2.5rem" fontFamily="WindSong">
+    <div>
+      <div style={{ display: 'grid', maxHeight: '100vh' }}>
+        <StaticImage
+          style={{
+            gridArea: '1/1'
+          }}
+          layout="fullWidth"
+          alt=""
+          src={'../images/background.png'}
+          formats={['auto', 'webp', 'avif']}
+        />
+        <div
+          style={{
+            gridArea: '1/1',
+            position: 'relative',
+            placeItems: 'center',
+            color: 'white',
+            display: 'grid',
+            fontFamily: 'dosis'
+          }}
+        >
+          <Heading textAlign="center" fontSize={['2rem', '3rem', '5rem']} fontFamily="WindSong">
             Sam Pastoriza
           </Heading>
-        </Center>
-      </Flex>
-      <Flex h="7vh">
-        <Spacer />
-        <Center>
-          <Link mr="4" href="http://sampastoriza.com" target="_blank">
-            Home
-          </Link>
-          <Link mr="4" href="http://portfolio.sampastoriza.com" target="_blank">
-            Portfolio
-          </Link>
-          <Link mr="4" href="http://blog.sampastoriza.com" target="_blank">
-            Blog
-          </Link>
-        </Center>
-      </Flex>
+        </div>
+        <div
+          style={{
+            gridArea: '1/1',
+            position: 'relative',
+            placeItems: 'flex-start flex-end',
+            display: 'grid',
+            fontFamily: 'dosis'
+          }}
+        >
+          <ButtonGroup marginTop="2rem" marginRight="2rem">
+            <Button
+              onClick={() => navigate('http://sampastoriza.com')}
+              colorScheme="whiteAlpha"
+              color="rgba(255,255,255,0.9)"
+              variant="ghost"
+            >
+              Home
+            </Button>
+            <Button
+              onClick={() => navigate('http://portfolio.sampastoriza.com')}
+              colorScheme="whiteAlpha"
+              color="rgba(255,255,255,0.9)"
+              variant="ghost"
+            >
+              Portfolio
+            </Button>
+            <Button
+              onClick={() => navigate('http://blog.sampastoriza.com')}
+              colorScheme="whiteAlpha"
+              color="rgba(255,255,255,0.9)"
+              variant="ghost"
+            >
+              Blog
+            </Button>
+          </ButtonGroup>
+        </div>
+      </div>
       <Flex>{children}</Flex>
       <Footer></Footer>
     </div>
