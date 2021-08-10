@@ -18,7 +18,7 @@ const DmiSection = () => {
       <Flex maxWidth="100vw" flexDirection="column" marginTop="2rem" marginBottom="2rem">
         <Flex flexDirection="column" marginBottom="2rem">
           <Heading>Digital Management LLC</Heading>
-          <Text>August 2017 - August 2021</Text>
+          <Text fontStyle="italic">August 2017 - August 2021</Text>
         </Flex>
         <Flex>
           <Flex flexDirection="column" maxWidth="60vw" marginRight="2rem">
@@ -29,10 +29,10 @@ const DmiSection = () => {
             </Text>
             <br />
             <Flex flexDirection="column">
-              <Text fontSize="2xl">Experience</Text>
-              <Flex flexDirection="row">
+              <Text fontSize="3xl">Experience</Text>
+              <Flex flexDirection="row" flexWrap="wrap">
                 <Flex flexDirection="column" justifyContent="center">
-                  <Text fontSize="xl">Projects</Text>
+                  <Text fontSize="xl">Customer Engagements</Text>
                   <Flex flexDirection="row" flexWrap="wrap">
                     <a href="https://www.allisontransmission.com/">
                       <StaticImage
@@ -40,10 +40,11 @@ const DmiSection = () => {
                           width: 'auto',
                           height: 'auto',
                           maxHeight: '100px',
-                          maxWidth: '130px'
+                          maxWidth: '150px',
+                          margin: '1rem'
                         }}
                         alt="Allison Transmission Logo"
-                        src={'../../images/allison-transmission-logo.png'}
+                        src={'../../images/allison-transmission-logo.jpeg'}
                       />
                     </a>
                     <a href="https://www.libertymutual.com/">
@@ -52,7 +53,8 @@ const DmiSection = () => {
                           width: 'auto',
                           height: 'auto',
                           maxWidth: '100px',
-                          maxHeight: '100px'
+                          maxHeight: '100px',
+                          margin: '1rem'
                         }}
                         alt="Liberty Mutual Logo"
                         src={'../../images/liberty-mutual-logo.png'}
@@ -64,7 +66,8 @@ const DmiSection = () => {
                           width: 'auto',
                           height: 'auto',
                           maxWidth: '100px',
-                          maxHeight: '100px'
+                          maxHeight: '100px',
+                          margin: '1rem'
                         }}
                         alt="KAR Global Logo"
                         src={'../../images/kar-global-logo.png'}
@@ -81,7 +84,8 @@ const DmiSection = () => {
                           width: 'auto',
                           height: 'auto',
                           maxWidth: '100px',
-                          maxHeight: '100px'
+                          maxHeight: '100px',
+                          margin: '1rem'
                         }}
                         alt="Amazon Web Services Logo"
                         src={'../../images/aws-logo.png'}
@@ -93,7 +97,8 @@ const DmiSection = () => {
                           width: 'auto',
                           height: 'auto',
                           maxWidth: '100px',
-                          maxHeight: '100px'
+                          maxHeight: '100px',
+                          margin: '1rem'
                         }}
                         alt="Angular Logo"
                         src={'../../images/angular-logo.png'}
@@ -105,7 +110,8 @@ const DmiSection = () => {
                           width: 'auto',
                           height: 'auto',
                           maxWidth: '160px',
-                          maxHeight: '100px'
+                          maxHeight: '100px',
+                          margin: '1rem'
                         }}
                         alt="Node Logo"
                         src={'../../images/node-logo.svg'}
@@ -117,7 +123,8 @@ const DmiSection = () => {
                           width: 'auto',
                           height: 'auto',
                           maxWidth: '120px',
-                          maxHeight: '100px'
+                          maxHeight: '100px',
+                          margin: '1rem'
                         }}
                         alt="VueJS Logo"
                         src={'../../images/vue-logo.png'}
@@ -129,7 +136,8 @@ const DmiSection = () => {
                           width: 'auto',
                           height: 'auto',
                           maxWidth: '100px',
-                          maxHeight: '100px'
+                          maxHeight: '100px',
+                          margin: '1rem'
                         }}
                         alt="C# Logo"
                         src={'../../images/c-sharp-logo.png'}

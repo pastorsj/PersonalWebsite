@@ -18,7 +18,7 @@ const GeorgetownSection = () => {
       <Flex maxWidth="100vw" flexDirection="column" marginTop="2rem" marginBottom="2rem">
         <Flex flexDirection="column" marginBottom="2rem">
           <Heading>Georgetown University</Heading>
-          <Text>August 2021 - Present</Text>
+          <Text fontStyle="italic">August 2021 - Present</Text>
         </Flex>
         <Flex>
           <Flex flexDirection="column" maxWidth="60vw" marginRight="2rem">
@@ -36,7 +36,7 @@ const GeorgetownSection = () => {
             <br />
             <Text>
               I will be seeking an internship in Data Science for Summer of 2022 and a full-time position to commence in
-              early 2023. My LinkedIn and resume are linked below.
+              early 2023. My LinkedIn and resume are linked in the footer.
             </Text>
           </Flex>
           <StaticImage

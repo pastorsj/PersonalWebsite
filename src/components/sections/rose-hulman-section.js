@@ -17,7 +17,7 @@ const RoseHulmanSection = () => {
       <Flex maxWidth="100vw" flexDirection="column" marginTop="2rem" marginBottom="2rem">
         <Flex flexDirection="column" marginBottom="2rem">
           <Heading>Rose-Hulman Institute of Technology</Heading>
-          <Text>August 2013 - May 2017</Text>
+          <Text fontStyle="italic">August 2013 - May 2017</Text>
         </Flex>
         <Flex>
           <Flex flexDirection="column" maxWidth="60vw">
