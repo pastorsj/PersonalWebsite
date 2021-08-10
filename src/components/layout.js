@@ -27,7 +27,12 @@ const Layout = ({ children }) => {
             fontFamily: 'dosis'
           }}
         >
-          <Heading textAlign="center" fontSize={['2rem', '3rem', '5rem']} fontFamily="WindSong">
+          <Heading
+            textAlign="center"
+            marginBottom={['2rem', '4rem', '6rem', '8rem']}
+            fontSize={['1.5rem', '2rem', '3rem', '5rem']}
+            fontFamily="WindSong"
+          >
             Sam Pastoriza
           </Heading>
         </div>
