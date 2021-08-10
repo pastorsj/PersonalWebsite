@@ -1,9 +1,10 @@
 import * as React from 'react';
 import { Flex, Spacer, Heading, Center, Link } from '@chakra-ui/react';
+import Footer from './footer';
 
 const Layout = ({ pageTitle, children }) => {
   return (
-    <div>
+    <div style={{ height: '100vh' }}>
       <Flex h="8vh">
         <Center w="100%">
           <Heading textAlign="center" fontSize="2.5rem" fontFamily="WindSong">
@@ -26,6 +27,7 @@ const Layout = ({ pageTitle, children }) => {
         </Center>
       </Flex>
       <Flex>{children}</Flex>
+      <Footer></Footer>
     </div>
   );
 };
