@@ -23,7 +23,9 @@ const DmiSection = () => {
         <Flex>
           <Flex flexDirection="column" maxWidth="60vw" marginRight="2rem">
             <Text>
-              I was a software consultant for 4 years with DMI specializing in commerical web application development.
+              I served as a Senior Software Consultant at DMI specializing in commercial web application development. I
+              became an invaluable technical lead, designing and executing digital, high-performance solutions for
+              various companies across the United States.
             </Text>
             <br />
             <Flex flexDirection="column">

@@ -22,16 +22,17 @@ const RoseHulmanSection = () => {
         <Flex>
           <Flex flexDirection="column" maxWidth="60vw">
             <Text>
-              I attended Rose-Hulman Institute of Technology with a keen interest in software. I double majored in
-              Software Engineering and Computer Science and double minored in Economics and Mathematics. While working
-              in software department, I primarily focused on web application development, which led to my first job in
-              software consultanting at DMI developing commerical web applications.
+              While attending the Rose-Hulman Institute of Technology, I developed a keen interest in software and
+              digital solutions. I double-majored in Software Engineering and Computer Science and had two minors in
+              Economics and Mathematics. I also worked part-time in the Rose-Hulman’s software department and focused
+              primarily on web application development. This led to my first position post-graduation in Software
+              Consulting for DMI, developing commercial web applications.
             </Text>
             <br />
             <Text>
-              While at Rose-Hulman, I was a 4 year varsity athlete playing golf. I was recognized by the Golf Coaches
-              Association of America as an All America Scholar in 2016. Golf has always been and continues to be a
-              passion that I share with as many people as possible.
+              While at Rose-Hulman, I was also student-athlete on the Varsity Golf team. I proudly competed for my
+              university for 4 years. I was recognized by the Golf Coaches Association of America as an All America
+              Scholar in 2016. Golf was and continues to be a great passion in my life.
             </Text>
           </Flex>
           <StaticImage
