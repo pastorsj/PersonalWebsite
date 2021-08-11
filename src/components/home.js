@@ -6,7 +6,7 @@ import InterestsSection from './sections/interests-section';
 
 const Home = ({ children }) => {
   return (
-    <div style={{ display: 'grid', width: '100vw', gridTemplateRows: 'repeat(4, 1fr)' }}>
+    <div style={{ display: 'grid', width: '100vw' }}>
       <GeorgetownSection></GeorgetownSection>
       <DmiSection></DmiSection>
       <RoseHulmanSection></RoseHulmanSection>

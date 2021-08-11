@@ -20,7 +20,7 @@ const RoseHulmanSection = () => {
           <Text fontStyle="italic">August 2013 - May 2017</Text>
         </Flex>
         <Flex flexDirection="row" flexWrap="wrap">
-          <Flex flexDirection="column" maxWidth="70vw" marginRight="2rem" marginBottom="1rem">
+          <Flex flexDirection="column" maxWidth="60vw" marginRight="2rem" marginBottom="1rem">
             <Text>
               While attending the Rose-Hulman Institute of Technology, I developed a keen interest in software and
               digital solutions. I double-majored in Software Engineering and Computer Science and had two minors in

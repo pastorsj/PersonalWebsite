@@ -40,7 +40,7 @@ const InterestsSection = () => {
               <Heading>Activities and Interests</Heading>
             </Flex>
             <Flex>
-              <Flex flexDirection="row" maxWidth="80vw" flexWrap="wrap">
+              <Flex flexDirection="row" maxWidth="75vw" flexWrap="wrap">
                 <Box maxW="sm" borderRadius="lg" overflow="hidden" background="rgba(0,0,0,0.65)" m="2">
                   <a href="https://www.flickr.com/people/sampastorizaphotos/">
                     <StaticImage alt="Cross Country" src={'../../images/cross-country.png'} />
