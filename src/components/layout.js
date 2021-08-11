@@ -62,14 +62,6 @@ const Layout = ({ children }) => {
             >
               Portfolio
             </Button>
-            <Button
-              onClick={() => navigate('http://blog.sampastoriza.com')}
-              colorScheme="whiteAlpha"
-              color="rgba(255,255,255,0.9)"
-              variant="ghost"
-            >
-              Blog
-            </Button>
           </ButtonGroup>
         </div>
       </div>

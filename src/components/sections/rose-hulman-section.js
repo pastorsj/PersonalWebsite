@@ -14,13 +14,13 @@ const RoseHulmanSection = () => {
         fontFamily: 'dosis'
       }}
     >
-      <Flex maxWidth="100vw" flexDirection="column" marginTop="2rem" marginBottom="2rem">
+      <Flex maxWidth="100vw" flexDirection="column" margin="2rem 1rem">
         <Flex flexDirection="column" marginBottom="2rem">
           <Heading>Rose-Hulman Institute of Technology</Heading>
           <Text fontStyle="italic">August 2013 - May 2017</Text>
         </Flex>
-        <Flex>
-          <Flex flexDirection="column" maxWidth="60vw">
+        <Flex flexDirection="row" flexWrap="wrap">
+          <Flex flexDirection="column" maxWidth="70vw" marginRight="2rem" marginBottom="1rem">
             <Text>
               While attending the Rose-Hulman Institute of Technology, I developed a keen interest in software and
               digital solutions. I double-majored in Software Engineering and Computer Science and had two minors in
@@ -35,16 +35,20 @@ const RoseHulmanSection = () => {
               Scholar in 2016. Golf was and continues to be a great passion in my life.
             </Text>
           </Flex>
-          <StaticImage
-            style={{
-              width: 'auto',
-              height: 'auto',
-              maxWidth: '150px',
-              maxHeight: '150px'
-            }}
-            alt="Rose-Hulman Logo"
-            src={'../../images/rose-hulman-logo.png'}
-          />
+          <Flex margin="auto">
+            <a href="https://www.rose-hulman.edu/">
+              <StaticImage
+                style={{
+                  width: 'auto',
+                  height: 'auto',
+                  maxWidth: '150px',
+                  maxHeight: '150px'
+                }}
+                alt="Rose-Hulman Logo"
+                src={'../../images/rose-hulman-logo.png'}
+              />
+            </a>
+          </Flex>
         </Flex>
       </Flex>
     </div>

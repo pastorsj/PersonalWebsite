@@ -15,13 +15,13 @@ const DmiSection = () => {
         fontFamily: 'dosis'
       }}
     >
-      <Flex maxWidth="100vw" flexDirection="column" marginTop="2rem" marginBottom="2rem">
+      <Flex maxWidth="100vw" flexDirection="column" margin="2rem 1rem">
         <Flex flexDirection="column" marginBottom="2rem">
           <Heading>Digital Management LLC</Heading>
           <Text fontStyle="italic">August 2017 - August 2021</Text>
         </Flex>
-        <Flex>
-          <Flex flexDirection="column" maxWidth="60vw" marginRight="2rem">
+        <Flex flexDirection="row" flexWrap="wrap">
+          <Flex flexDirection="column" maxWidth="60vw" marginRight="2rem" marginBottom="1rem">
             <Text>
               I served as a Senior Software Consultant at DMI specializing in commercial web application development. I
               became an invaluable technical lead, designing and executing digital, high-performance solutions for
@@ -148,16 +148,20 @@ const DmiSection = () => {
               </Flex>
             </Flex>
           </Flex>
-          <StaticImage
-            style={{
-              width: 'auto',
-              height: 'auto',
-              maxWidth: '150px',
-              maxHeight: '150px'
-            }}
-            alt="Digital Management LLC Logo"
-            src={'../../images/dmi-logo.png'}
-          />
+          <Flex margin="auto">
+            <a href="https://dminc.com/">
+              <StaticImage
+                style={{
+                  width: 'auto',
+                  height: 'auto',
+                  maxWidth: '150px',
+                  maxHeight: '150px'
+                }}
+                alt="Digital Management LLC Logo"
+                src={'../../images/dmi-logo.png'}
+              />
+            </a>
+          </Flex>
         </Flex>
       </Flex>
     </div>
