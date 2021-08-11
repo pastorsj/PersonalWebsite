@@ -95,7 +95,7 @@ const InterestsSection = () => {
                       Music
                     </Box>
                     <Box mt="1" lineHeight="tight">
-                      Music has always been a part of life, ranging from rock and the Rolling Stones to Guiseppe Verdi's
+                      Music has always been a part of life, ranging from rock and the Rolling Stones to Giuseppe Verdi's
                       opera masterworks. This year, I have dedicated myself to listening all of Bach's Cantatas
                       masterfully recorded by John Eliot Gardener with the English Baroque Soloists and Monteverdi
                       Choir.
