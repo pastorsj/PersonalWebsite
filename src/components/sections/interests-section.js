@@ -40,7 +40,7 @@ const InterestsSection = () => {
               <Heading>Activities and Interests</Heading>
             </Flex>
             <Flex>
-              <Flex flexDirection="row" maxWidth="80vw" flexWrap="wrap">
+              <Flex flexDirection="row" maxWidth="75vw" flexWrap="wrap">
                 <Box maxW="sm" borderRadius="lg" overflow="hidden" background="rgba(0,0,0,0.65)" m="2">
                   <a href="https://www.flickr.com/people/sampastorizaphotos/">
                     <StaticImage alt="Cross Country" src={'../../images/cross-country.png'} />
@@ -95,7 +95,7 @@ const InterestsSection = () => {
                       Music
                     </Box>
                     <Box mt="1" lineHeight="tight">
-                      Music has always been a part of life, ranging from rock and the Rolling Stones to Guiseppe Verdi's
+                      Music has always been a part of life, ranging from rock and the Rolling Stones to Giuseppe Verdi's
                       opera masterworks. This year, I have dedicated myself to listening all of Bach's Cantatas
                       masterfully recorded by John Eliot Gardener with the English Baroque Soloists and Monteverdi
                       Choir.

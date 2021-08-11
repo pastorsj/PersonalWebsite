@@ -15,13 +15,13 @@ const GeorgetownSection = () => {
         fontFamily: 'dosis'
       }}
     >
-      <Flex maxWidth="100vw" flexDirection="column" margin="2rem 1rem">
+      <Flex maxWidth="100vw" flexDirection="column" margin="4rem 1rem">
         <Flex flexDirection="column" marginBottom="2rem">
           <Heading>Georgetown University</Heading>
           <Text fontStyle="italic">August 2021 - Present</Text>
         </Flex>
         <Flex flexDirection="row" flexWrap="wrap">
-          <Flex flexDirection="column" maxWidth="70vw" marginRight="2rem" marginBottom="1rem">
+          <Flex flexDirection="column" maxWidth="60vw" marginRight="2rem" marginBottom="1rem">
             <Text>
               Starting in Fall 2021, I will be attending Georgetown University for an 18-month Masters of Science in
               Data Science & Analytics. After four hands-on years at DMI, I am excited to formally expand my knowledge
