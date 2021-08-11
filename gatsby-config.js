@@ -8,7 +8,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: 'personal-sjp'
+        bucketName: 'www.sampastoriza.com'
       }
     },
     {
