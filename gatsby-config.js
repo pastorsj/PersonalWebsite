@@ -42,6 +42,21 @@ module.exports = {
         resetCSS: true,
         isUsingColorMode: true
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-109818478-1',
+        head: false,
+        anonymize: true,
+        respectDNT: true,
+        exclude: [],
+        pageTransitionDelay: 0,
+        defer: false,
+        cookieDomain: 'www.sampastoriza.com',
+        variationId: '0',
+        enableWebVitalsTracking: true
+      }
     }
   ],
   siteMetadata: {
