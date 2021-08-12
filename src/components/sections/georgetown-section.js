@@ -18,20 +18,18 @@ const GeorgetownSection = () => {
       <Flex maxWidth="100vw" flexDirection="column" margin="4rem 1rem">
         <Flex flexDirection="column" marginBottom="2rem">
           <Heading>Georgetown University</Heading>
-          <Text fontStyle="italic">August 2021 - Present</Text>
+          <Text fontSize="md" fontWeight="bold">
+            Candidate for MS in Data Science and Analytics
+          </Text>
+          <Text fontStyle="italic">Expected Graduation December, 2022</Text>
         </Flex>
         <Flex flexDirection="row" flexWrap="wrap">
           <Flex flexDirection="column" maxWidth="60vw" marginRight="2rem" marginBottom="1rem">
             <Text>
               Starting in Fall 2021, I will be attending Georgetown University for an 18-month Masters of Science in
-              Data Science & Analytics. After four hands-on years at DMI, I am excited to formally expand my knowledge
-              and to add to new skills to my repertoire.
-            </Text>
-            <br />
-            <Text>
-              Data Science is used everywhere, from Health Care and Sports to Fraud Prevention to Transportation. The
-              possibilities for applications of Data Science are endless and I am certain that this degree is a
-              fantastic next step to solidifying my abilities in this field.
+              Data Science & Analytics. After four years as a software engineering consulant at Digital Management LLC
+              (DMI), I am convinced that a masters in data science will significantly increase my technical and
+              managerial skills.
             </Text>
             <br />
             <Text>

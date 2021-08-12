@@ -31,50 +31,6 @@ const DmiSection = () => {
             <Flex flexDirection="column">
               <Text fontSize="3xl">Experience</Text>
               <Flex flexDirection="row" flexWrap="wrap">
-                <Flex flexDirection="column" justifyContent="center">
-                  <Text fontSize="xl">Customer Engagements</Text>
-                  <Flex flexDirection="row" flexWrap="wrap">
-                    <a href="https://www.allisontransmission.com/">
-                      <StaticImage
-                        style={{
-                          width: 'auto',
-                          height: 'auto',
-                          maxHeight: '100px',
-                          maxWidth: '150px',
-                          margin: '1rem'
-                        }}
-                        alt="Allison Transmission Logo"
-                        src={'../../images/allison-transmission-logo.jpeg'}
-                      />
-                    </a>
-                    <a href="https://www.libertymutual.com/">
-                      <StaticImage
-                        style={{
-                          width: 'auto',
-                          height: 'auto',
-                          maxWidth: '100px',
-                          maxHeight: '100px',
-                          margin: '1rem'
-                        }}
-                        alt="Liberty Mutual Logo"
-                        src={'../../images/liberty-mutual-logo.png'}
-                      />
-                    </a>
-                    <a href="https://www.karglobal.com/">
-                      <StaticImage
-                        style={{
-                          width: 'auto',
-                          height: 'auto',
-                          maxWidth: '100px',
-                          maxHeight: '100px',
-                          margin: '1rem'
-                        }}
-                        alt="KAR Global Logo"
-                        src={'../../images/kar-global-logo.png'}
-                      />
-                    </a>
-                  </Flex>
-                </Flex>
                 <Flex flexDirection="column">
                   <Text fontSize="xl">Technologies</Text>
                   <Flex flexDirection="row" flexWrap="wrap">
