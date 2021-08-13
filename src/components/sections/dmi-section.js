@@ -25,7 +25,7 @@ const DmiSection = () => {
             <Text>
               I served as a Senior Software Consultant at DMI specializing in commercial web application development. I
               became an invaluable technical lead, designing and executing digital, high-performance solutions for
-              various companies across the United States.
+              various Fortune 500 companies across the United States.
             </Text>
             <br />
             <Flex flexDirection="column">
