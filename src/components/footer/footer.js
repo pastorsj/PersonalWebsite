@@ -13,9 +13,9 @@ const Footer = () => (
             src={'../../images/profile-picture.png'}
             style={{
               maxHeight: '50px',
-              maxWidth: '50px',
-              borderRadius: '50%'
+              maxWidth: '50px'
             }}
+            imgStyle={{ borderRadius: '50%' }}
           />
           <Text ml="10px">Sam Pastoriza</Text>
         </Flex>

@@ -6,7 +6,7 @@ import InterestsSection from './sections/interests-section';
 
 const Home = ({ children }) => {
   return (
-    <div style={{ display: 'grid', width: '100vw' }}>
+    <div style={{ display: 'grid', width: '100vw', overflowX: 'hidden' }}>
       <GeorgetownSection></GeorgetownSection>
       <DmiSection></DmiSection>
       <RoseHulmanSection></RoseHulmanSection>
