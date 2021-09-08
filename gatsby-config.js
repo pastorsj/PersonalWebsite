@@ -60,7 +60,7 @@ module.exports = {
     }
   ],
   siteMetadata: {
-    url: 'https://sampastoriza.com',
+    siteUrl: 'https://sampastoriza.com',
     title: 'Sam Pastoriza',
     titleTemplate: '%s · Personal Website',
     description: 'Avid JS developer, relentless self-improver, trying not to make the same mistake thrice',
