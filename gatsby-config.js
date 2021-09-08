@@ -60,7 +60,10 @@ module.exports = {
     }
   ],
   siteMetadata: {
-    siteUrl: 'https://sampastoriza.com',
-    title: 'Sam Pastoriza'
+    url: 'https://sampastoriza.com',
+    title: 'Sam Pastoriza',
+    titleTemplate: '%s · Personal Website',
+    description: 'Avid JS developer, relentless self-improver, trying not to make the same mistake thrice',
+    image: '/images/icon.png'
   }
 };

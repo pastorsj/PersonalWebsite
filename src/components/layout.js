@@ -3,11 +3,13 @@ import { Flex, Heading, Button, ButtonGroup } from '@chakra-ui/react';
 import Footer from './footer/footer';
 import { StaticImage } from 'gatsby-plugin-image';
 import { navigate } from 'gatsby';
+import SEO from './seo';
 
 const Layout = ({ children }) => {
   return (
     <div>
-      <div style={{ display: 'grid', maxHeight: '100vh' }}>
+      <SEO></SEO>
+      <header style={{ display: 'grid', maxHeight: '100vh' }}>
         <StaticImage
           style={{
             gridArea: '1/1'
@@ -36,7 +38,7 @@ const Layout = ({ children }) => {
             Sam Pastoriza
           </Heading>
         </div>
-        <div
+        <nav
           style={{
             gridArea: '1/1',
             position: 'relative',
@@ -63,8 +65,8 @@ const Layout = ({ children }) => {
               Portfolio
             </Button>
           </ButtonGroup>
-        </div>
-      </div>
+        </nav>
+      </header>
       <Flex>{children}</Flex>
       <Footer></Footer>
     </div>
