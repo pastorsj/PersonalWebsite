@@ -26,15 +26,15 @@ const GeorgetownSection = () => {
         <Flex flexDirection="row" flexWrap="wrap">
           <Flex flexDirection="column" maxWidth="60vw" marginRight="2rem" marginBottom="1rem">
             <Text>
-              Starting in Fall 2021, I will be attending Georgetown University for an 18-month Masters of Science in
-              Data Science & Analytics. After four years as a software engineering consulant at Digital Management LLC
-              (DMI), I am convinced that a masters in data science will significantly increase my technical and
-              managerial skills.
+              I am attending Georgetown University for an 18-month Masters of Science in Data Science & Analytics. After
+              four years as a software engineering consulant at Digital Management LLC (DMI), I am convinced that a
+              masters in data science will significantly increase my technical and managerial skills.
             </Text>
             <br />
             <Text>
-              I will be seeking an internship in Data Science for Summer of 2022 and a full-time position to commence in
-              early 2023. My LinkedIn and resume are linked in the footer.
+              I will be an intern at the Deloitte AI Center of Excellence under the Risk and Financial Adivsory
+              Services. I will be seeking a full time position starting in January 2023. My resume and LinkedIn are in
+              the footer below.
             </Text>
           </Flex>
           <Flex margin="auto">
