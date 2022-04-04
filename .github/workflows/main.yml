@@ -22,17 +22,11 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
           aws-region: ${{ secrets.AWS_S3_REGION }}
       - name: Deploy
         uses: jonelantha/gatsby-s3-action@v1
         with:
           dest-s3-bucket: ${{ secrets.AWS_S3_BUCKET }}
           cloudfront-id-to-invalidate: ${{ secrets.AWS_CLOUDFRONT_ID }}
-
-env:
-  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
-  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY }}
-  AWS_DEFAULT_REGION: ${{ secrets.AWS_S3_REGION }}
-  AWS_DEFAULT_OUTPUT: json
