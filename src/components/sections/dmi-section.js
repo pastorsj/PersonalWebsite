@@ -6,7 +6,7 @@ const DmiSection = () => {
   return (
     <div
       style={{
-        gridArea: '2/1',
+        gridArea: '3/1',
         position: 'relative',
         placeItems: 'center',
         background: 'linear-gradient(to right, #C52326, #401A47)',
@@ -26,6 +26,19 @@ const DmiSection = () => {
               I served as a Senior Software Consultant at DMI specializing in commercial web application development. I
               became an invaluable technical lead, designing and executing digital, high-performance solutions for
               various Fortune 500 companies across the United States.
+            </Text>
+            <br />
+            <Text>
+              I consulted for a Fortune 500 company to rearchitect their main customer-facing application using AWS and
+              microservices. This included developing a microservice architecture using AWS Lambda, SQS, SNS, and
+              DynamoDB. During that period, I became certified at the developer level in AWS infrastructure and in the
+              Scaled Agile Framework. I also consulted for a large car services company where I led a team as the
+              technical lead developing a highly scalable micro-frontend framework in VueJS. This application was the
+              main facing application for one of their largest customers in the car industry and was a template for
+              future customization for other customers. Finally, I consulted for an Indianapolis-based company to
+              re-architect their core engineering product that dictated factory floor sales. This product incorporated
+              the .NET core ecosystem combined with an Angular frontend to create a seamless and user-friendly
+              environment for less experienced engineers.
             </Text>
             <br />
             <Flex flexDirection="column">

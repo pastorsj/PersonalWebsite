@@ -1,13 +1,12 @@
 import * as React from 'react';
-import { Flex, Heading, Box, IconButton } from '@chakra-ui/react';
+import { Flex, Heading, Box } from '@chakra-ui/react';
 import { StaticImage } from 'gatsby-plugin-image';
-import { FaCamera, FaGolfBall } from 'react-icons/fa';
 
 const InterestsSection = () => {
   return (
     <div
       style={{
-        gridArea: '4/1',
+        gridArea: '5/1',
         position: 'relative',
         placeItems: 'center',
         backgroundColor: 'white',

@@ -6,7 +6,7 @@ const GeorgetownSection = () => {
   return (
     <div
       style={{
-        gridArea: '1/1',
+        gridArea: '2/1',
         position: 'relative',
         placeItems: 'center',
         backgroundColor: '#DDDDDF',
@@ -28,14 +28,102 @@ const GeorgetownSection = () => {
             <Text>
               I am attending Georgetown University for an 18-month Masters of Science in Data Science & Analytics. After
               four years as a software engineering consulant at Digital Management LLC (DMI), I am convinced that a
-              masters in data science will significantly increase my technical and managerial skills.
+              masters in data science will significantly increase my technical and managerial skills. I am seeking a
+              full time position in data science and artifical intelligience starting in January of 2023. My resume and
+              LinkedIn are in the footer below.
             </Text>
             <br />
             <Text>
-              I will be an intern at the Deloitte AI Center of Excellence under the Risk and Financial Adivsory
-              Services. I will be seeking a full time position starting in January 2023. My resume and LinkedIn are in
-              the footer below.
+              I am the head graduate teaching assistant for the Statistics and Probability for Data Science course this
+              fall. My responsibilities include coordinating a group of 13 teaching assistants and three different
+              professors to teach 150+ students. I lead the discussion sessions, lab, case study, and homework grading.
+              I was also a graduate teaching assistant for the data structures and algorithms course in the Analytics
+              program. I lead the in-class exercise portion of the class and answer any questions students have
+              throughout the class time. Additionally, I was the head graduate teaching assistant for the advanced web
+              application development course in my first semester as a graduate student.
             </Text>
+            <br />
+            <Text>
+              I am doing research into recommendation systems, especially surrounding image similarity. Most recently, I
+              am working with art collections to provide better recommendations for viewers interested in works of art
+              similar to the one they are viewing. I am writing a paper now that will be submitted to WACV.
+            </Text>
+            <br />
+            <Flex flexDirection="column">
+              <Text fontSize="3xl">Experience</Text>
+              <Flex flexDirection="row" flexWrap="wrap">
+                <Flex flexDirection="column">
+                  <Text fontSize="xl">Technologies</Text>
+                  <Flex flexDirection="row" flexWrap="wrap">
+                    <a href="https://www.python.org">
+                      <StaticImage
+                        style={{
+                          width: 'auto',
+                          height: 'auto',
+                          maxWidth: '100px',
+                          maxHeight: '100px',
+                          margin: '1rem'
+                        }}
+                        alt="Python Logo"
+                        src={'../../images/python-logo.png'}
+                      />
+                    </a>
+                    <a href="https://www.r-project.org">
+                      <StaticImage
+                        style={{
+                          width: 'auto',
+                          height: 'auto',
+                          maxWidth: '160px',
+                          maxHeight: '130px',
+                          margin: '1rem'
+                        }}
+                        alt="R Logo"
+                        src={'../../images/r-logo.png'}
+                      />
+                    </a>
+                    <a href="https://pytorch.org">
+                      <StaticImage
+                        style={{
+                          width: 'auto',
+                          height: 'auto',
+                          maxWidth: '100px',
+                          maxHeight: '120px',
+                          margin: '1rem'
+                        }}
+                        alt="PyTorch Logo"
+                        src={'../../images/pytorch-logo.png'}
+                      />
+                    </a>
+                    <a href="https://www.tensorflow.org">
+                      <StaticImage
+                        style={{
+                          width: 'auto',
+                          height: 'auto',
+                          maxWidth: '100px',
+                          maxHeight: '120px',
+                          margin: '1rem'
+                        }}
+                        alt="TensorFlow Logo"
+                        src={'../../images/tensorflow-logo.png'}
+                      />
+                    </a>
+                    <a href="https://scikit-learn.org/stable/">
+                      <StaticImage
+                        style={{
+                          width: 'auto',
+                          height: 'auto',
+                          maxWidth: '120px',
+                          maxHeight: '100px',
+                          margin: '1rem'
+                        }}
+                        alt="SciKit Learn Logo"
+                        src={'../../images/sklearn-logo.png'}
+                      />
+                    </a>
+                  </Flex>
+                </Flex>
+              </Flex>
+            </Flex>
           </Flex>
           <Flex margin="auto">
             <a href="https://analytics.georgetown.edu/">
