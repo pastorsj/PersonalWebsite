@@ -21,7 +21,13 @@ const DmiSection = () => {
           <Text fontStyle="italic">August 2017 - August 2021</Text>
         </Flex>
         <Flex flexDirection="row" flexWrap="wrap">
-          <Flex flexDirection="column" maxWidth="60vw" marginRight="2rem" marginBottom="1rem">
+          <Flex
+            flexDirection="column"
+            maxWidth="60vw"
+            marginRight="2rem"
+            marginBottom="1rem"
+            minWidth={['100%', '100%', 'initial']}
+          >
             <Text>
               I served as a Senior Software Consultant at DMI specializing in commercial web application development. I
               became an invaluable technical lead, designing and executing digital, high-performance solutions for

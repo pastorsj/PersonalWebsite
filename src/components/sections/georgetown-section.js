@@ -24,7 +24,13 @@ const GeorgetownSection = () => {
           <Text fontStyle="italic">Expected Graduation December, 2022</Text>
         </Flex>
         <Flex flexDirection="row" flexWrap="wrap">
-          <Flex flexDirection="column" maxWidth="60vw" marginRight="2rem" marginBottom="1rem">
+          <Flex
+            flexDirection="column"
+            maxWidth="60vw"
+            marginRight="2rem"
+            marginBottom="1rem"
+            minWidth={['100%', '100%', 'initial']}
+          >
             <Text>
               I am attending Georgetown University for an 18-month Masters of Science in Data Science & Analytics. After
               four years as a software engineering consulant at Digital Management LLC (DMI), I am convinced that a

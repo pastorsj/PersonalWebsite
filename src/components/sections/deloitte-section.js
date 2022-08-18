@@ -23,7 +23,13 @@ const DeloitteSection = () => {
           </Text>
         </Flex>
         <Flex flexDirection="row" flexWrap="wrap">
-          <Flex flexDirection="column" maxWidth="60vw" marginRight="2rem" marginBottom="1rem">
+          <Flex
+            flexDirection="column"
+            maxWidth="60vw"
+            marginRight="2rem"
+            marginBottom="1rem"
+            minWidth={['100%', '100%', 'initial']}
+          >
             <Text>
               During my time at Deloitte, I developed a custom python package that measures the performance of machine
               learning and neural network models using a combination of metrics and visualizations to increase the
