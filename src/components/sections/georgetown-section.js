@@ -21,7 +21,7 @@ const GeorgetownSection = () => {
           <Text fontSize="md" fontWeight="bold">
             Candidate for MS in Data Science and Analytics
           </Text>
-          <Text fontStyle="italic">Expected Graduation December, 2022</Text>
+          <Text fontStyle="italic">August 2021 - December 2022</Text>
         </Flex>
         <Flex flexDirection="row" flexWrap="wrap">
           <Flex
@@ -32,21 +32,15 @@ const GeorgetownSection = () => {
             minWidth={['100%', '100%', 'initial']}
           >
             <Text>
-              I am attending Georgetown University for an 18-month Masters of Science in Data Science & Analytics. After
-              four years as a software engineering consulant at Digital Management LLC (DMI), I am convinced that a
-              masters in data science will significantly increase my technical and managerial skills. I am seeking a
-              full time position in data science and artifical intelligience starting in January of 2023. My resume and
-              LinkedIn are in the footer below.
-            </Text>
-            <br />
-            <Text>
-              I am the head graduate teaching assistant for the Statistics and Probability for Data Science course this
-              fall. My responsibilities include coordinating a group of 13 teaching assistants and three different
-              professors to teach 150+ students. I lead the discussion sessions, lab, case study, and homework grading.
-              I was also a graduate teaching assistant for the data structures and algorithms course in the Analytics
-              program. I lead the in-class exercise portion of the class and answer any questions students have
-              throughout the class time. Additionally, I was the head graduate teaching assistant for the advanced web
-              application development course in my first semester as a graduate student.
+              I attended Georgetown University for an 18-month Masters of Science in Data Science & Analytics. A Masters
+              in Data Science significantly increased my technical and managerial skills. I was the head graduate
+              teaching assistant for the Statistics and Probability for Data Science course this fall. My
+              responsibilities include coordinating a group of 13 teaching assistants and three different professors to
+              teach 150+ students. I led the discussion sessions, lab, case study, and homework grading. I was also a
+              graduate teaching assistant for the data structures and algorithms course in the Analytics program. I lea
+              the in-class exercise portion of the class and answer any questions students have throughout the class
+              time. Additionally, I was the head graduate teaching assistant for the advanced web application
+              development course in my first semester as a graduate student.
             </Text>
             <br />
             <Text>
