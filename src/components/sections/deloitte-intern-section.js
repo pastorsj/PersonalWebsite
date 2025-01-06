@@ -2,11 +2,11 @@ import * as React from 'react';
 import { Text, Flex, Heading } from '@chakra-ui/react';
 import { StaticImage } from 'gatsby-plugin-image';
 
-const DeloitteSection = () => {
+const DeloitteInternSection = () => {
   return (
     <div
       style={{
-        gridArea: '1/1',
+        gridArea: '3/1',
         position: 'relative',
         placeItems: 'center',
         backgroundColor: '#0076A8',
@@ -19,18 +19,9 @@ const DeloitteSection = () => {
         <Flex flexDirection="column" marginBottom="2rem">
           <Heading>Deloitte AI Center of Excellence</Heading>
           <Text fontSize="md" fontWeight="bold">
-            Data Scientist Intern (
-            <Text fontStyle="italic" fontSize="sm" display="inline">
-              June 2022 - August 2022
-            </Text>
-            )
-            <br />
-            Data Scientist (
-            <Text fontStyle="italic" fontSize="sm" display="inline">
-              Jan 2023 - Present
-            </Text>
-            )
+            Data Scientist Intern
           </Text>
+          <Text fontStyle="italic">June 2022 - August 2022</Text>
         </Flex>
         <Flex flexDirection="row" flexWrap="wrap">
           <Flex
@@ -56,12 +47,6 @@ const DeloitteSection = () => {
               Scientists at the CoE to get feedback on the product, both from a code quality and architecture
               perspective.
             </Text>
-            <br />
-            As a full time Data Scientist, I work on a team that is applying state-of-the-art NLP techniques for a large
-            internal client base. This product saves teams weeks of preprocessing work. Additionally, I am the lead
-            maintainer of the performance metrics project developed over the internship. The package is now used across
-            most projects at the CoE.
-            <br />
             <Flex flexDirection="column">
               <Text fontSize="3xl">Experience</Text>
               <Flex flexDirection="row" flexWrap="wrap">
@@ -73,8 +58,8 @@ const DeloitteSection = () => {
                         style={{
                           width: 'auto',
                           height: 'auto',
-                          maxWidth: '100px',
-                          maxHeight: '100px',
+                          maxWidth: '60px',
+                          maxHeight: '60px',
                           margin: '1rem'
                         }}
                         alt="Python Logo"
@@ -86,12 +71,25 @@ const DeloitteSection = () => {
                         style={{
                           width: 'auto',
                           height: 'auto',
-                          maxWidth: '100px',
-                          maxHeight: '120px',
+                          maxWidth: '60px',
+                          maxHeight: '80px',
                           margin: '1rem'
                         }}
                         alt="PyTorch Logo"
                         src={'../../images/pytorch-logo.png'}
+                      />
+                    </a>
+                    <a href="https://www.tensorflow.org/">
+                      <StaticImage
+                        style={{
+                          width: 'auto',
+                          height: 'auto',
+                          maxWidth: '60px',
+                          maxHeight: '60px',
+                          margin: '1rem'
+                        }}
+                        alt="Tensorflow Logo"
+                        src={'../../images/tensorflow-logo.png'}
                       />
                     </a>
                     <a href="https://scikit-learn.org/stable/">
@@ -99,9 +97,9 @@ const DeloitteSection = () => {
                         style={{
                           width: 'auto',
                           height: 'auto',
-                          maxWidth: '120px',
-                          maxHeight: '100px',
-                          margin: '1rem'
+                          maxWidth: '80px',
+                          maxHeight: '60px',
+                          margin: '2rem 1rem 1rem 1rem'
                         }}
                         alt="SciKit Learn Logo"
                         src={'../../images/sklearn-logo.png'}
@@ -118,8 +116,8 @@ const DeloitteSection = () => {
                 style={{
                   width: 'auto',
                   height: 'auto',
-                  maxWidth: '150px',
-                  maxHeight: '150px'
+                  maxWidth: '170px',
+                  maxHeight: '170px'
                 }}
                 alt="Deloitte Logo"
                 src={'../../images/deloitte-logo.png'}
@@ -132,4 +130,4 @@ const DeloitteSection = () => {
   );
 };
 
-export default DeloitteSection;
+export default DeloitteInternSection;

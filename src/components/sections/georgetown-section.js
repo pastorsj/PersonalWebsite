@@ -19,7 +19,7 @@ const GeorgetownSection = () => {
         <Flex flexDirection="column" marginBottom="2rem">
           <Heading>Georgetown University</Heading>
           <Text fontSize="md" fontWeight="bold">
-            Candidate for MS in Data Science and Analytics
+            MS in Data Science and Analytics
           </Text>
           <Text fontStyle="italic">August 2021 - December 2022</Text>
         </Flex>
@@ -60,8 +60,8 @@ const GeorgetownSection = () => {
                         style={{
                           width: 'auto',
                           height: 'auto',
-                          maxWidth: '100px',
-                          maxHeight: '100px',
+                          maxWidth: '60px',
+                          maxHeight: '60px',
                           margin: '1rem'
                         }}
                         alt="Python Logo"
@@ -73,8 +73,8 @@ const GeorgetownSection = () => {
                         style={{
                           width: 'auto',
                           height: 'auto',
-                          maxWidth: '160px',
-                          maxHeight: '130px',
+                          maxWidth: '90px',
+                          maxHeight: '70px',
                           margin: '1rem'
                         }}
                         alt="R Logo"
@@ -86,8 +86,8 @@ const GeorgetownSection = () => {
                         style={{
                           width: 'auto',
                           height: 'auto',
-                          maxWidth: '100px',
-                          maxHeight: '120px',
+                          maxWidth: '60px',
+                          maxHeight: '80px',
                           margin: '1rem'
                         }}
                         alt="PyTorch Logo"
@@ -99,8 +99,8 @@ const GeorgetownSection = () => {
                         style={{
                           width: 'auto',
                           height: 'auto',
-                          maxWidth: '100px',
-                          maxHeight: '120px',
+                          maxWidth: '60px',
+                          maxHeight: '80px',
                           margin: '1rem'
                         }}
                         alt="TensorFlow Logo"
@@ -112,9 +112,9 @@ const GeorgetownSection = () => {
                         style={{
                           width: 'auto',
                           height: 'auto',
-                          maxWidth: '120px',
-                          maxHeight: '100px',
-                          margin: '1rem'
+                          maxWidth: '80px',
+                          maxHeight: '60px',
+                          margin: '2rem 1rem 1rem 1rem'
                         }}
                         alt="SciKit Learn Logo"
                         src={'../../images/sklearn-logo.png'}

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Flex, Heading, Button, ButtonGroup } from '@chakra-ui/react';
+import { Flex, Heading, Button, ButtonGroup, Grid, Box, Text, GridItem, VStack } from '@chakra-ui/react';
 import Footer from './footer/footer';
 import { StaticImage } from 'gatsby-plugin-image';
 import { navigate } from 'gatsby';
@@ -29,14 +29,52 @@ const Layout = ({ children }) => {
             fontFamily: 'dosis'
           }}
         >
-          <Heading
-            textAlign="center"
-            marginBottom={['2rem', '4rem', '6rem', '8rem']}
-            fontSize={['1.5rem', '2rem', '3rem', '5rem']}
-            fontFamily="WindSong"
+          <VStack
+            spacing={4}
+            align="center"
+            maxW="50%"
+            mx="auto"
+            mb={['2rem', '4rem', '6rem', '10rem']}
+            mt={['4rem', '3rem', '0rem']}
           >
-            Sam Pastoriza
-          </Heading>
+            <Grid templateColumns={['1fr', '2fr 2fr']} gap={6} alignItems="center" justifyContent="center">
+              <GridItem colSpan={[1, 1]} textAlign={['center', 'right']}>
+                <Heading
+                  marginTop={['1rem']}
+                  marginBottom={['1rem', '2rem', '4rem']}
+                  fontSize={['1.5rem', '2rem', '2.5rem', '3rem']}
+                  fontFamily="serif"
+                >
+                  Sam Pastoriza
+                </Heading>
+                <Text fontSize={['sm', 'md', 'lg']} color="white.900">
+                  Avid data scientist, researcher, software developer, golfer, cook, and classical music enthusiast.
+                </Text>
+              </GridItem>
+              <GridItem colSpan={[1, 1]} textAlign="center">
+                <Box display="flex" justifyContent="center" alignItems="center">
+                  <Box
+                    width={['100px', '150px', '200px', '250px']}
+                    height={['100px', '150px', '200px', '250px']}
+                    boxShadow="lg"
+                    borderRadius="full"
+                    overflow="hidden"
+                  >
+                    <StaticImage
+                      src={'../images/profile-picture.png'}
+                      alt="Sam Pastoriza"
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)'
+                      }}
+                    />
+                  </Box>
+                </Box>
+              </GridItem>
+            </Grid>
+          </VStack>
         </div>
         <nav
           style={{

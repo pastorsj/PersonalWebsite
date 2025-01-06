@@ -6,7 +6,7 @@ const DmiSection = () => {
   return (
     <div
       style={{
-        gridArea: '3/1',
+        gridArea: '4/1',
         position: 'relative',
         placeItems: 'center',
         background: 'linear-gradient(to right, #C52326, #401A47)',
@@ -18,6 +18,9 @@ const DmiSection = () => {
       <Flex maxWidth="100vw" flexDirection="column" margin="2rem 1rem">
         <Flex flexDirection="column" marginBottom="2rem">
           <Heading>Digital Management LLC</Heading>
+          <Text fontSize="md" fontWeight="bold">
+            Senior Software Engineer
+          </Text>
           <Text fontStyle="italic">August 2017 - August 2021</Text>
         </Flex>
         <Flex flexDirection="row" flexWrap="wrap">
@@ -58,8 +61,8 @@ const DmiSection = () => {
                         style={{
                           width: 'auto',
                           height: 'auto',
-                          maxWidth: '100px',
-                          maxHeight: '100px',
+                          maxWidth: '60px',
+                          maxHeight: '60px',
                           margin: '1rem'
                         }}
                         alt="Amazon Web Services Logo"
@@ -71,8 +74,8 @@ const DmiSection = () => {
                         style={{
                           width: 'auto',
                           height: 'auto',
-                          maxWidth: '100px',
-                          maxHeight: '100px',
+                          maxWidth: '60px',
+                          maxHeight: '60px',
                           margin: '1rem'
                         }}
                         alt="Angular Logo"
@@ -84,8 +87,8 @@ const DmiSection = () => {
                         style={{
                           width: 'auto',
                           height: 'auto',
-                          maxWidth: '160px',
-                          maxHeight: '100px',
+                          maxWidth: '120px',
+                          maxHeight: '60px',
                           margin: '1rem'
                         }}
                         alt="Node Logo"
@@ -97,8 +100,8 @@ const DmiSection = () => {
                         style={{
                           width: 'auto',
                           height: 'auto',
-                          maxWidth: '120px',
-                          maxHeight: '100px',
+                          maxWidth: '80px',
+                          maxHeight: '60px',
                           margin: '1rem'
                         }}
                         alt="VueJS Logo"
@@ -110,8 +113,8 @@ const DmiSection = () => {
                         style={{
                           width: 'auto',
                           height: 'auto',
-                          maxWidth: '100px',
-                          maxHeight: '100px',
+                          maxWidth: '80px',
+                          maxHeight: '80px',
                           margin: '1rem'
                         }}
                         alt="C# Logo"
@@ -129,8 +132,8 @@ const DmiSection = () => {
                 style={{
                   width: 'auto',
                   height: 'auto',
-                  maxWidth: '150px',
-                  maxHeight: '150px'
+                  maxWidth: '170px',
+                  maxHeight: '170px'
                 }}
                 alt="Digital Management LLC Logo"
                 src={'../../images/dmi-logo.png'}
