@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Flex, Heading, Button, ButtonGroup, Grid, Box, Text, GridItem, VStack } from '@chakra-ui/react';
+import { Flex, Heading, Button, Group, Grid, Box, Text, GridItem, VStack } from '@chakra-ui/react';
 import Footer from './footer/footer';
 import { StaticImage } from 'gatsby-plugin-image';
 import { navigate } from 'gatsby';
@@ -85,12 +85,14 @@ const Layout = ({ children }) => {
             fontFamily: 'dosis'
           }}
         >
-          <ButtonGroup marginTop="2rem" marginRight="2rem">
+          <Group marginTop="2rem" marginRight="2rem">
             <Button
               onClick={() => navigate('http://sampastoriza.com')}
               colorScheme="whiteAlpha"
               color="rgba(255,255,255,0.9)"
-              variant="ghost"
+              background="none"
+              _hover={{ bg: 'rgba(255, 255, 255, 0.04)' }}
+              fontSize="16px"
             >
               Home
             </Button>
@@ -98,11 +100,13 @@ const Layout = ({ children }) => {
               onClick={() => navigate('http://portfolio.sampastoriza.com')}
               colorScheme="whiteAlpha"
               color="rgba(255,255,255,0.9)"
-              variant="ghost"
+              background="none"
+              _hover={{ bg: 'rgba(255, 255, 255, 0.04)' }}
+              fontSize="16px"
             >
               Portfolio
             </Button>
-          </ButtonGroup>
+          </Group>
         </nav>
       </header>
       <Flex>{children}</Flex>

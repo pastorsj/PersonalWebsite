@@ -36,7 +36,7 @@ const InterestsSection = () => {
         >
           <Flex maxWidth="100vw" flexDirection="column" marginTop="2rem" marginBottom="2rem">
             <Flex flexDirection="column" marginBottom="2rem">
-              <Heading>Activities and Interests</Heading>
+              <Heading size="3xl">Activities and Interests</Heading>
             </Flex>
             <Flex>
               <Flex flexDirection="row" maxWidth="75vw" flexWrap="wrap">

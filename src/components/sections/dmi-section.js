@@ -17,7 +17,7 @@ const DmiSection = () => {
     >
       <Flex maxWidth="100vw" flexDirection="column" margin="2rem 1rem">
         <Flex flexDirection="column" marginBottom="2rem">
-          <Heading>Digital Management LLC</Heading>
+          <Heading size="3xl">Digital Management LLC</Heading>
           <Text fontSize="md" fontWeight="bold">
             Senior Software Engineer
           </Text>

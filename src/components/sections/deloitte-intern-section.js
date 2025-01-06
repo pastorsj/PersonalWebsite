@@ -17,7 +17,7 @@ const DeloitteInternSection = () => {
     >
       <Flex maxWidth="100vw" flexDirection="column" margin="4rem 1rem">
         <Flex flexDirection="column" marginBottom="2rem">
-          <Heading>Deloitte AI Center of Excellence</Heading>
+          <Heading size="3xl">Deloitte (AI Center of Excellence)</Heading>
           <Text fontSize="md" fontWeight="bold">
             Data Scientist Intern
           </Text>

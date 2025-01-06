@@ -17,7 +17,7 @@ const DeloitteFullTimeSection = () => {
     >
       <Flex maxWidth="100vw" flexDirection="column" margin="4rem 1rem">
         <Flex flexDirection="column" marginBottom="2rem">
-          <Heading>Deloitte AI Center of Excellence</Heading>
+          <Heading size="3xl">Deloitte (AI Center of Excellence)</Heading>
           <Text fontSize="md" fontWeight="bold">
             Data Scientist
           </Text>
@@ -43,15 +43,13 @@ const DeloitteFullTimeSection = () => {
             <Text>
               One of my main responsibilities was researching, developing, deploying, and iterating upon the zero-day
               threat model created and published by Deloitte{' '}
-              <Link href="https://arxiv.org/pdf/2205.02298" isExternal>
+              <Link color="white" href="https://arxiv.org/pdf/2205.02298" isExternal>
                 [1]
-              </Link>
-              ,{' '}
-              <Link href="https://arxiv.org/pdf/2211.00441" isExternal>
+              </Link>{' '}
+              <Link color="white" href="https://arxiv.org/pdf/2211.00441" isExternal>
                 [2]
-              </Link>
-              ,{' '}
-              <Link href="https://arxiv.org/pdf/2305.15488" isExternal>
+              </Link>{' '}
+              <Link color="white" href="https://arxiv.org/pdf/2305.15488" isExternal>
                 [3]
               </Link>
               . I led the deployment of this model to six different clients across the commercial and government
@@ -59,6 +57,7 @@ const DeloitteFullTimeSection = () => {
               refactors of the code to improve throughput while maintaining consistency in the results produced by the
               pipeline. A major refactor utilized{' '}
               <Link
+                color="white"
                 style={{ fontStyle: 'italic' }}
                 href="https://developer.nvidia.com/morpheus-cybersecurity"
                 isExternal
@@ -66,11 +65,16 @@ const DeloitteFullTimeSection = () => {
                 NVIDIA's Morpheus
               </Link>{' '}
               technology and a deep understanding of their{' '}
-              <Link style={{ fontStyle: 'italic' }} href="https://developer.nvidia.com/rapids" isExternal>
+              <Link color="white" style={{ fontStyle: 'italic' }} href="https://developer.nvidia.com/rapids" isExternal>
                 RAPIDS
               </Link>{' '}
               and{' '}
-              <Link style={{ fontStyle: 'italic' }} href="https://developer.nvidia.com/cuda-toolkit" isExternal>
+              <Link
+                color="white"
+                style={{ fontStyle: 'italic' }}
+                href="https://developer.nvidia.com/cuda-toolkit"
+                isExternal
+              >
                 CUDA
               </Link>{' '}
               framework. I became a subject matter expert in the firm and assisted several teams with similar refactors.

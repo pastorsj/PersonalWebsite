@@ -37,13 +37,6 @@ module.exports = {
       __key: 'pages'
     },
     {
-      resolve: '@chakra-ui/gatsby-plugin',
-      options: {
-        resetCSS: true,
-        isUsingColorMode: true
-      }
-    },
-    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: 'UA-109818478-1',

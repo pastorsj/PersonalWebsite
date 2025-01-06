@@ -17,7 +17,7 @@ const GeorgetownSection = () => {
     >
       <Flex maxWidth="100vw" flexDirection="column" margin="4rem 1rem">
         <Flex flexDirection="column" marginBottom="2rem">
-          <Heading>Georgetown University</Heading>
+          <Heading size="3xl">Georgetown University</Heading>
           <Text fontSize="md" fontWeight="bold">
             MS in Data Science and Analytics
           </Text>

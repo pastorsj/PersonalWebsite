@@ -16,7 +16,7 @@ const RoseHulmanSection = () => {
     >
       <Flex maxWidth="100vw" flexDirection="column" margin="2rem 1rem">
         <Flex flexDirection="column" marginBottom="2rem">
-          <Heading>Rose-Hulman Institute of Technology</Heading>
+          <Heading size="3xl">Rose-Hulman Institute of Technology</Heading>
           <Text fontSize="md" fontWeight="bold">
             Bachelors of Science in Software Engineering and Computer Science
           </Text>
