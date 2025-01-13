@@ -17,7 +17,7 @@ const SocialMediaLinks = () => (
       variant="ghost"
       as="a"
       title="LinkedIn"
-      href="https://www.linkedin.com/in/sam-pastoriza-b68b78100/"
+      href="https://www.linkedin.com/in/sam-pastoriza/"
       aria-label="LinkedIn"
     >
       <FaLinkedin fontSize="20px" />
