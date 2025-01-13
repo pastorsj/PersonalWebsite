@@ -37,15 +37,15 @@ const GeorgetownSection = () => {
               teaching assistant for the Statistics and Probability for Data Science course this fall. My
               responsibilities include coordinating a group of 13 teaching assistants and three different professors to
               teach 150+ students. I led the discussion sessions, lab, case study, and homework grading. I was also a
-              graduate teaching assistant for the data structures and algorithms course in the Analytics program. I lea
-              the in-class exercise portion of the class and answer any questions students have throughout the class
+              graduate teaching assistant for the data structures and algorithms course in the Analytics program. I led
+              the in-class exercise portion of the class and answered any questions students had throughout the class
               time. Additionally, I was the head graduate teaching assistant for the advanced web application
               development course in my first semester as a graduate student.
             </Text>
             <br />
             <Text>
-              I am doing research into recommendation systems, especially surrounding image similarity. Most recently, I
-              am working with art collections to provide better recommendations for viewers interested in works of art
+              I did research into recommendation systems, especially surrounding image similarity. Most recently, I am
+              working with art collections to provide better recommendations for viewers interested in works of art
               similar to the one they are viewing. I am writing a paper now that will be submitted to WACV.
             </Text>
             <br />
@@ -131,8 +131,8 @@ const GeorgetownSection = () => {
                 style={{
                   width: 'auto',
                   height: 'auto',
-                  maxWidth: '150px',
-                  maxHeight: '150px'
+                  maxWidth: '110px',
+                  maxHeight: '110px'
                 }}
                 alt="Georgetown University Logo"
                 src={'../../images/georgetown-logo.png'}

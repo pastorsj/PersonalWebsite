@@ -43,13 +43,13 @@ const DeloitteFullTimeSection = () => {
             <Text>
               One of my main responsibilities was researching, developing, deploying, and iterating upon the zero-day
               threat model created and published by Deloitte{' '}
-              <Link color="white" href="https://arxiv.org/pdf/2205.02298" isExternal>
+              <Link color="white" href="https://arxiv.org/pdf/2205.02298" target="_blank">
                 [1]
               </Link>{' '}
-              <Link color="white" href="https://arxiv.org/pdf/2211.00441" isExternal>
+              <Link color="white" href="https://arxiv.org/pdf/2211.00441" target="_blank">
                 [2]
               </Link>{' '}
-              <Link color="white" href="https://arxiv.org/pdf/2305.15488" isExternal>
+              <Link color="white" href="https://arxiv.org/pdf/2305.15488" target="_blank">
                 [3]
               </Link>
               . I led the deployment of this model to six different clients across the commercial and government
@@ -58,22 +58,27 @@ const DeloitteFullTimeSection = () => {
               pipeline. A major refactor utilized{' '}
               <Link
                 color="white"
-                style={{ fontStyle: 'italic' }}
+                style={{ fontStyle: 'italic', textDecoration: 'underline' }}
                 href="https://developer.nvidia.com/morpheus-cybersecurity"
-                isExternal
+                target="_blank"
               >
                 NVIDIA's Morpheus
               </Link>{' '}
               technology and a deep understanding of their{' '}
-              <Link color="white" style={{ fontStyle: 'italic' }} href="https://developer.nvidia.com/rapids" isExternal>
+              <Link
+                color="white"
+                style={{ fontStyle: 'italic', textDecoration: 'underline' }}
+                href="https://developer.nvidia.com/rapids"
+                target="_blank"
+              >
                 RAPIDS
               </Link>{' '}
               and{' '}
               <Link
                 color="white"
-                style={{ fontStyle: 'italic' }}
+                style={{ fontStyle: 'italic', textDecoration: 'underline' }}
                 href="https://developer.nvidia.com/cuda-toolkit"
-                isExternal
+                target="_blank"
               >
                 CUDA
               </Link>{' '}
