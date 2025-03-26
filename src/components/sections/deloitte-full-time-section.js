@@ -1,6 +1,17 @@
 import * as React from 'react';
 import { Text, Flex, Heading, Link } from '@chakra-ui/react';
 import { StaticImage } from 'gatsby-plugin-image';
+import Publications from '../common/publications';
+
+const publications = [
+  {
+    title: 'Retrieval Augmented Anomaly Detection (RAAD): Nimble Model Adjustment Without Retraining',
+    link: 'https://arxiv.org/abs/2502.19534',
+    conference: 'ISDFS 2025',
+    conferenceLink: 'https://isdfs.org',
+    date: 'Feb 26, 2025'
+  }
+];
 
 const DeloitteFullTimeSection = () => {
   return (
@@ -106,6 +117,8 @@ const DeloitteFullTimeSection = () => {
               multiple types of data including meeting notes and internal documents to create a condensed set of
               flowcharts that describe processes across a company.
             </Text>
+            <br />
+            <Publications publications={publications} />
             <br />
             <Flex flexDirection="column">
               <Text fontSize="3xl">Experience</Text>
