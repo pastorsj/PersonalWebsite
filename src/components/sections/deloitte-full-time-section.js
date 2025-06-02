@@ -9,7 +9,9 @@ const publications = [
     link: 'https://arxiv.org/abs/2502.19534',
     conference: 'ISDFS 2025',
     conferenceLink: 'https://isdfs.org',
-    date: 'Feb 26, 2025'
+    published_date: 'Feb 26, 2025',
+    presented_date: 'Apr 24, 2025',
+    presentation_link: 'https://isdfs.org/wp-content/uploads/2025/04/043.jpg'
   }
 ];
 
@@ -29,10 +31,20 @@ const DeloitteFullTimeSection = () => {
       <Flex maxWidth="100vw" flexDirection="column" margin="4rem 1rem">
         <Flex flexDirection="column" marginBottom="2rem">
           <Heading size="3xl">Deloitte (AI Center of Excellence)</Heading>
-          <Text fontSize="md" fontWeight="bold">
-            Data Scientist
-          </Text>
-          <Text fontStyle="italic">Jan 2023 - Present</Text>
+          <Flex flexDirection="row" alignItems="center" gap="2rem" margin="1rem 0">
+            <Flex flexDirection="column">
+              <Text fontSize="md" fontWeight="bold">
+                Associate Data Scientist
+              </Text>
+              <Text fontStyle="italic">Jan 2023 - Jun 2025</Text>
+            </Flex>
+            <Flex flexDirection="column">
+              <Text fontSize="md" fontWeight="bold">
+                Data Scientist
+              </Text>
+              <Text fontStyle="italic">Jun 2025 - Present</Text>
+            </Flex>
+          </Flex>
         </Flex>
         <Flex flexDirection="row" flexWrap="wrap">
           <Flex

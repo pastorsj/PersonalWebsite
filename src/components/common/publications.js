@@ -16,8 +16,21 @@ const Publications = ({ publications }) => (
           <Link color="white" href={publication.conferenceLink}>
             {publication.conference}
           </Link>
-          , <i style={{ fontStyle: 'italic' }}>{publication.date}</i>
+          , <i style={{ fontStyle: 'italic' }}>{publication.published_date}</i>
         </Text>
+        {publication.presented_date && (
+          <Text fontSize="sm">
+            Presented on <i style={{ fontStyle: 'italic' }}>{publication.presented_date}</i>
+            {publication.presentation_link && (
+              <>
+                {' | '}
+                <Link color="white" href={publication.presentation_link} target="_blank">
+                  Presentation
+                </Link>
+              </>
+            )}
+          </Text>
+        )}
       </Stack>
     ))}
   </Stack>
