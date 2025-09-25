@@ -6,7 +6,7 @@ const GeorgetownSection = () => {
   return (
     <div
       style={{
-        gridArea: '2/1',
+        gridArea: '3/1',
         position: 'relative',
         placeItems: 'center',
         backgroundColor: '#DDDDDF',

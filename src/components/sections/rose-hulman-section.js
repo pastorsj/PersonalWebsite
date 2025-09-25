@@ -6,7 +6,7 @@ const RoseHulmanSection = () => {
   return (
     <div
       style={{
-        gridArea: '5/1',
+        gridArea: '6/1',
         position: 'relative',
         placeItems: 'center',
         backgroundColor: 'white',

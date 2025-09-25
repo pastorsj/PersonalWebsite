@@ -5,10 +5,12 @@ import RoseHulmanSection from './sections/rose-hulman-section';
 import InterestsSection from './sections/interests-section';
 import DeloitteInternSection from './sections/deloitte-intern-section';
 import DeloitteFullTimeSection from './sections/deloitte-full-time-section';
+import NVIDIASection from './sections/nvidia-full-time-section';
 
 const Home = ({ children }) => {
   return (
     <main role="main" style={{ display: 'grid', width: '100vw', overflowX: 'hidden' }}>
+      <NVIDIASection></NVIDIASection>
       <DeloitteFullTimeSection></DeloitteFullTimeSection>
       <GeorgetownSection></GeorgetownSection>
       <DeloitteInternSection></DeloitteInternSection>

@@ -19,7 +19,7 @@ const DeloitteFullTimeSection = () => {
   return (
     <div
       style={{
-        gridArea: '1/1',
+        gridArea: '2/1',
         position: 'relative',
         placeItems: 'center',
         backgroundColor: '#0076A8',
@@ -42,7 +42,7 @@ const DeloitteFullTimeSection = () => {
               <Text fontSize="md" fontWeight="bold">
                 Data Scientist
               </Text>
-              <Text fontStyle="italic">Jun 2025 - Present</Text>
+              <Text fontStyle="italic">Jun 2025 - Sept 2025</Text>
             </Flex>
           </Flex>
         </Flex>

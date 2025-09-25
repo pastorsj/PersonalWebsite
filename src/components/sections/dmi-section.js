@@ -6,7 +6,7 @@ const DmiSection = () => {
   return (
     <div
       style={{
-        gridArea: '4/1',
+        gridArea: '5/1',
         position: 'relative',
         placeItems: 'center',
         background: 'linear-gradient(to right, #C52326, #401A47)',

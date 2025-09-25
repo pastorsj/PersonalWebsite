@@ -2,26 +2,30 @@ import * as React from 'react';
 import { Text, Flex, Heading } from '@chakra-ui/react';
 import { StaticImage } from 'gatsby-plugin-image';
 
-const DeloitteInternSection = () => {
+const NVIDIASection = () => {
   return (
     <div
       style={{
-        gridArea: '4/1',
+        gridArea: '1/1',
         position: 'relative',
         placeItems: 'center',
-        backgroundColor: '#0076A8',
+        backgroundColor: '#FFFFFF',
         display: 'grid',
-        color: '#FFFFFF',
+        color: '#000000',
         fontFamily: 'dosis'
       }}
     >
       <Flex maxWidth="100vw" flexDirection="column" margin="4rem 1rem">
         <Flex flexDirection="column" marginBottom="2rem">
-          <Heading size="3xl">Deloitte (AI Center of Excellence)</Heading>
-          <Text fontSize="md" fontWeight="bold">
-            Data Scientist Intern
-          </Text>
-          <Text fontStyle="italic">June 2022 - August 2022</Text>
+          <Heading size="3xl">NVIDIA</Heading>
+          <Flex flexDirection="row" alignItems="center" gap="2rem" margin="1rem 0">
+            <Flex flexDirection="column">
+              <Text fontSize="md" fontWeight="bold">
+                Solutions Architect
+              </Text>
+              <Text fontStyle="italic">Sept 2025 - Present</Text>
+            </Flex>
+          </Flex>
         </Flex>
         <Flex flexDirection="row" flexWrap="wrap">
           <Flex
@@ -32,21 +36,14 @@ const DeloitteInternSection = () => {
             minWidth={['100%', '100%', 'initial']}
           >
             <Text>
-              During my time as an intern at Deloitte, I developed a custom python package that measures the performance
-              of machine learning and neural network models using a combination of metrics and visualizations to
-              increase the explainability and transparency of models developed at Deloitte's AI Center of Excellence.
-              Additionally, I integrated this package with two production-level projects. I also built out
-              infrastructure around this project, including a GitLab CI/CD pipeline that ran unit and integration tests
-              and automatic documentation generation using Sphinx.
+              As a Solutions Architect at NVIDIA, I leverage my expertise in AI and machine learning to design and
+              implement cutting-edge solutions that harness the power of NVIDIA's NeMo technology to build agentic
+              applications. I collaborate with cross-functional teams to develop scalable architectures, optimize
+              performance, and ensure seamless integration of AI models into real-world applications. My role involves
+              working closely with clients to understand their unique challenges and deliver tailored solutions that
+              drive innovation and business value.
             </Text>
             <br />
-            <Text>
-              In addition to managing the development process of this package, I also presented the final product to
-              more than 50 people at AI Center of Excellence. I also personally presented to the Deloitte AI Design
-              Council, consisting of AI leaders across the CoE. Finally, I held weekly code reviews with Master Data
-              Scientists at the CoE to get feedback on the product, both from a code quality and architecture
-              perspective.
-            </Text>
             <Flex flexDirection="column">
               <Text fontSize="3xl">Experience</Text>
               <Flex flexDirection="row" flexWrap="wrap">
@@ -79,30 +76,43 @@ const DeloitteInternSection = () => {
                         src={'../../images/pytorch-logo.png'}
                       />
                     </a>
-                    <a href="https://www.tensorflow.org/">
-                      <StaticImage
-                        style={{
-                          width: 'auto',
-                          height: 'auto',
-                          maxWidth: '60px',
-                          maxHeight: '60px',
-                          margin: '1rem'
-                        }}
-                        alt="Tensorflow Logo"
-                        src={'../../images/tensorflow-logo.png'}
-                      />
-                    </a>
-                    <a href="https://scikit-learn.org/stable/">
+                    <a href="https://developer.nvidia.com/morpheus-cybersecurity">
                       <StaticImage
                         style={{
                           width: 'auto',
                           height: 'auto',
                           maxWidth: '80px',
                           maxHeight: '60px',
+                          margin: '1.5rem 1rem 1rem 1rem'
+                        }}
+                        alt="NVIDIA (Morpheus) Logo"
+                        src={'../../images/nvidia-logo.png'}
+                      />
+                    </a>
+                    <a href="https://rapids.ai">
+                      <StaticImage
+                        style={{
+                          width: 'auto',
+                          height: 'auto',
+                          maxWidth: '90px',
+                          maxHeight: '60px',
                           margin: '2rem 1rem 1rem 1rem'
                         }}
-                        alt="SciKit Learn Logo"
-                        src={'../../images/sklearn-logo.png'}
+                        alt="RAPIDS (NVIDIA) Logo"
+                        src={'../../images/rapids-logo.png'}
+                      />
+                    </a>
+                    <a href="https://www.langchain.com">
+                      <StaticImage
+                        style={{
+                          width: 'auto',
+                          height: 'auto',
+                          maxWidth: '60px',
+                          maxHeight: '60px',
+                          margin: '1.5rem 1rem 1rem 1rem'
+                        }}
+                        alt="LangChain Logo"
+                        src={'../../images/langchain-logo.png'}
                       />
                     </a>
                   </Flex>
@@ -111,16 +121,16 @@ const DeloitteInternSection = () => {
             </Flex>
           </Flex>
           <Flex margin="auto">
-            <a href="https://www2.deloitte.com/us/en/pages/deloitte-analytics/articles/advancing-human-ai-collaboration.html">
+            <a href="https://www.nvidia.com/en-us/">
               <StaticImage
                 style={{
                   width: 'auto',
                   height: 'auto',
-                  maxWidth: '170px',
+                  maxWidth: '190px',
                   maxHeight: '170px'
                 }}
-                alt="Deloitte Logo"
-                src={'../../images/deloitte-logo.png'}
+                alt="NVIDIA Logo"
+                src={'../../images/nvidia-logo.png'}
               />
             </a>
           </Flex>
@@ -130,4 +140,4 @@ const DeloitteInternSection = () => {
   );
 };
 
-export default DeloitteInternSection;
+export default NVIDIASection;

@@ -6,7 +6,7 @@ const InterestsSection = () => {
   return (
     <div
       style={{
-        gridArea: '6/1',
+        gridArea: '7/1',
         position: 'relative',
         placeItems: 'center',
         backgroundColor: 'white',
