@@ -9,6 +9,8 @@ const SocialMediaLinks = () => (
       as="a"
       title="Resume"
       href="https://personal-sjp-docs.s3.amazonaws.com/Resume.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
       aria-label="Resume"
     >
       <FaNewspaper fontSize="20px" />
@@ -18,11 +20,21 @@ const SocialMediaLinks = () => (
       as="a"
       title="LinkedIn"
       href="https://www.linkedin.com/in/sam-pastoriza/"
+      target="_blank"
+      rel="noopener noreferrer"
       aria-label="LinkedIn"
     >
       <FaLinkedin fontSize="20px" />
     </IconButton>
-    <IconButton variant="ghost" as="a" title="GitHub" href="https://github.com/pastorsj" aria-label="GitHub">
+    <IconButton
+      variant="ghost"
+      as="a"
+      title="GitHub"
+      href="https://github.com/pastorsj"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="GitHub"
+    >
       <FaGithub fontSize="20px" />
     </IconButton>
   </HStack>

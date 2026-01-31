@@ -1,0 +1,245 @@
+{
+  "sections": [
+    {
+      "id": "nvidia",
+      "type": "job",
+      "company": "NVIDIA",
+      "gridArea": "1/1",
+      "backgroundColor": "#FFFFFF",
+      "timelineColor": "#76B900",
+      "textColor": "#000000",
+      "positions": [
+        {
+          "title": "Solutions Architect",
+          "dates": "Sept 2025 - Present"
+        }
+      ],
+      "description": [
+        "As a Solutions Architect at NVIDIA, I leverage my expertise in AI and machine learning to design and implement cutting-edge solutions that harness the power of NVIDIA's NeMo technology to build agentic applications. I collaborate with cross-functional teams to develop scalable architectures, optimize performance, and ensure seamless integration of AI models into real-world applications. My role involves working closely with clients to understand their unique challenges and deliver tailored solutions that drive innovation and business value."
+      ],
+      "technologies": [
+        { "name": "Python", "url": "https://www.python.org", "image": "python-logo.png", "alt": "Python Logo" },
+        { "name": "PyTorch", "url": "https://pytorch.org", "image": "pytorch-logo.png", "alt": "PyTorch Logo" },
+        { "name": "NVIDIA Morpheus", "url": "https://developer.nvidia.com/morpheus-cybersecurity", "image": "nvidia-logo.png", "alt": "NVIDIA (Morpheus) Logo" },
+        { "name": "RAPIDS", "url": "https://rapids.ai", "image": "rapids-logo.png", "alt": "RAPIDS (NVIDIA) Logo" },
+        { "name": "LangChain", "url": "https://www.langchain.com", "image": "langchain-logo.png", "alt": "LangChain Logo" }
+      ],
+      "companyLogo": {
+        "url": "https://www.nvidia.com/en-us/",
+        "image": "nvidia-logo.png",
+        "alt": "NVIDIA Logo",
+        "maxWidth": "190px",
+        "maxHeight": "170px"
+      }
+    },
+    {
+      "id": "deloitte-full-time",
+      "type": "job",
+      "company": "Deloitte (AI Center of Excellence)",
+      "gridArea": "2/1",
+      "backgroundColor": "#0076A8",
+      "textColor": "#FFFFFF",
+      "positions": [
+        {
+          "title": "Associate Data Scientist",
+          "dates": "Jan 2023 - Jun 2025"
+        },
+        {
+          "title": "Data Scientist",
+          "dates": "Jun 2025 - Sept 2025"
+        }
+      ],
+      "description": [
+        "As a Data Scientist at Deloitte, I have worked with many teams and clients in the cybersecurity area, applying AI to various problems, from anomaly detection in the form of zero-day threats to automatically building out libraries of cyber-specific regulations for individual clients using Generative AI. In addition to this work, I have presented to thousands of technical and non-technical professionals at Deloitte on topics ranging from the Data Science/AI lifecycle to advanced Generative AI use cases in cyber and healthcare."
+      ],
+      "descriptionHtml": "<p>One of my main responsibilities was researching, developing, deploying, and iterating upon the zero-day threat model created and published by Deloitte <a href=\"https://arxiv.org/pdf/2205.02298\" target=\"_blank\">[1]</a> <a href=\"https://arxiv.org/pdf/2211.00441\" target=\"_blank\">[2]</a> <a href=\"https://arxiv.org/pdf/2305.15488\" target=\"_blank\">[3]</a>. I led the deployment of this model to six different clients across the commercial and government sectors, ranging from transportation and manufacturing to big-tech industries. This involved major refactors of the code to improve throughput while maintaining consistency in the results produced by the pipeline. A major refactor utilized <a href=\"https://developer.nvidia.com/morpheus-cybersecurity\" target=\"_blank\"><i>NVIDIA's Morpheus</i></a> technology and a deep understanding of their <a href=\"https://developer.nvidia.com/rapids\" target=\"_blank\"><i>RAPIDS</i></a> and <a href=\"https://developer.nvidia.com/cuda-toolkit\" target=\"_blank\"><i>CUDA</i></a> framework. I became a subject matter expert in the firm and assisted several teams with similar refactors. This framework allowed us to improve the pipeline's throughput from <b>1 million network flows per minute to 15 million network flows per minute</b>. Using Morpheus allowed our team to switch to a streaming-first paradigm, which further improves the throughput of the larger pipeline (outside of the model itself) by removing the need to store data temporarily. This new architecture and paradigm led to a cost reduction of <b>80%</b>, as GPUs were utilized far more efficiently.</p><p>In addition to maintaining the ZDT model, I led the development of several NLP and Generative AI projects. Each of these projects involved the entire data science lifecycle, from understanding client requirements, researching and performing a literature review, developing minimum viable products, iterating, and deploying full-stack applications that <b>always included a human in the loop to maximize trust and safety</b> in the final product. I utilized technologies such as LangChain and PyTorch to build out an AI pipeline that created a custom library of cybersecurity regulations sourced from Excel spreadsheets and standard regulation documents such as NIST CSF and GDPR. This involved Generative AI technologies such as OpenAI and Anthropic's LLMs to condense and summarize regulations to custom text classifiers to allow teams working with the document to review and correct issues as needed. This reduced the time to delivery by up to <b>50%</b> according to stakeholders using it in production. Additionally, I am refining a Generative agent using LangGraph that sources multiple types of data including meeting notes and internal documents to create a condensed set of flowcharts that describe processes across a company.</p>",
+      "publications": [
+        {
+          "title": "Retrieval Augmented Anomaly Detection (RAAD): Nimble Model Adjustment Without Retraining",
+          "link": "https://arxiv.org/abs/2502.19534",
+          "conference": "ISDFS 2025",
+          "conferenceLink": "https://isdfs.org",
+          "published_date": "Feb 26, 2025",
+          "presented_date": "Apr 24, 2025",
+          "presentation_link": "https://isdfs.org/wp-content/uploads/2025/04/043.jpg"
+        }
+      ],
+      "technologies": [
+        { "name": "Python", "url": "https://www.python.org", "image": "python-logo.png", "alt": "Python Logo" },
+        { "name": "PyTorch", "url": "https://pytorch.org", "image": "pytorch-logo.png", "alt": "PyTorch Logo" },
+        { "name": "SciKit-Learn", "url": "https://scikit-learn.org/stable/", "image": "sklearn-logo.png", "alt": "SciKit-Learn Logo" },
+        { "name": "NVIDIA Morpheus", "url": "https://developer.nvidia.com/morpheus-cybersecurity", "image": "nvidia-logo.png", "alt": "NVIDIA (Morpheus) Logo" },
+        { "name": "RAPIDS", "url": "https://rapids.ai", "image": "rapids-logo.png", "alt": "RAPIDS (NVIDIA) Logo" },
+        { "name": "LangChain", "url": "https://www.langchain.com", "image": "langchain-logo.png", "alt": "LangChain Logo" },
+        { "name": "Anthropic", "url": "https://www.anthropic.com", "image": "anthropic-logo.png", "alt": "Anthropic Logo" },
+        { "name": "AWS Bedrock", "url": "https://aws.amazon.com/bedrock/", "image": "bedrock-logo.png", "alt": "AWS Bedrock Logo" }
+      ],
+      "companyLogo": {
+        "url": "https://www2.deloitte.com/us/en/pages/deloitte-analytics/articles/advancing-human-ai-collaboration.html",
+        "image": "deloitte-logo.png",
+        "alt": "Deloitte Logo",
+        "maxWidth": "170px",
+        "maxHeight": "170px"
+      }
+    },
+    {
+      "id": "georgetown",
+      "type": "education",
+      "company": "Georgetown University",
+      "gridArea": "3/1",
+      "backgroundColor": "#DDDDDF",
+      "textColor": "#041E42",
+      "positions": [
+        {
+          "title": "MS in Data Science and Analytics",
+          "dates": "August 2021 - December 2022"
+        }
+      ],
+      "description": [
+        "I attended Georgetown University for an 18-month Masters of Science in Data Science & Analytics. A Masters in Data Science significantly increased my technical and managerial skills. I was the head graduate teaching assistant for the Statistics and Probability for Data Science course this fall. My responsibilities include coordinating a group of 13 teaching assistants and three different professors to teach 150+ students. I led the discussion sessions, lab, case study, and homework grading. I was also a graduate teaching assistant for the data structures and algorithms course in the Analytics program. I led the in-class exercise portion of the class and answered any questions students had throughout the class time. Additionally, I was the head graduate teaching assistant for the advanced web application development course in my first semester as a graduate student.",
+        "I did research into recommendation systems, especially surrounding image similarity. Most recently, I am working with art collections to provide better recommendations for viewers interested in works of art similar to the one they are viewing. I am writing a paper now that will be submitted to WACV."
+      ],
+      "technologies": [
+        { "name": "Python", "url": "https://www.python.org", "image": "python-logo.png", "alt": "Python Logo" },
+        { "name": "R", "url": "https://www.r-project.org", "image": "r-logo.png", "alt": "R Logo" },
+        { "name": "PyTorch", "url": "https://pytorch.org", "image": "pytorch-logo.png", "alt": "PyTorch Logo" },
+        { "name": "TensorFlow", "url": "https://www.tensorflow.org", "image": "tensorflow-logo.png", "alt": "TensorFlow Logo" },
+        { "name": "SciKit-Learn", "url": "https://scikit-learn.org/stable/", "image": "sklearn-logo.png", "alt": "SciKit Learn Logo" }
+      ],
+      "companyLogo": {
+        "url": "https://analytics.georgetown.edu/",
+        "image": "georgetown-logo.png",
+        "alt": "Georgetown University Logo",
+        "maxWidth": "110px",
+        "maxHeight": "110px"
+      }
+    },
+    {
+      "id": "deloitte-intern",
+      "type": "job",
+      "company": "Deloitte (AI Center of Excellence)",
+      "gridArea": "4/1",
+      "backgroundColor": "#0076A8",
+      "textColor": "#FFFFFF",
+      "positions": [
+        {
+          "title": "Data Scientist Intern",
+          "dates": "June 2022 - August 2022"
+        }
+      ],
+      "description": [
+        "During my time as an intern at Deloitte, I developed a custom python package that measures the performance of machine learning and neural network models using a combination of metrics and visualizations to increase the explainability and transparency of models developed at Deloitte's AI Center of Excellence. Additionally, I integrated this package with two production-level projects. I also built out infrastructure around this project, including a GitLab CI/CD pipeline that ran unit and integration tests and automatic documentation generation using Sphinx.",
+        "In addition to managing the development process of this package, I also presented the final product to more than 50 people at AI Center of Excellence. I also personally presented to the Deloitte AI Design Council, consisting of AI leaders across the CoE. Finally, I held weekly code reviews with Master Data Scientists at the CoE to get feedback on the product, both from a code quality and architecture perspective."
+      ],
+      "technologies": [
+        { "name": "Python", "url": "https://www.python.org", "image": "python-logo.png", "alt": "Python Logo" },
+        { "name": "PyTorch", "url": "https://pytorch.org", "image": "pytorch-logo.png", "alt": "PyTorch Logo" },
+        { "name": "TensorFlow", "url": "https://www.tensorflow.org/", "image": "tensorflow-logo.png", "alt": "Tensorflow Logo" },
+        { "name": "SciKit-Learn", "url": "https://scikit-learn.org/stable/", "image": "sklearn-logo.png", "alt": "SciKit Learn Logo" }
+      ],
+      "companyLogo": {
+        "url": "https://www2.deloitte.com/us/en/pages/deloitte-analytics/articles/advancing-human-ai-collaboration.html",
+        "image": "deloitte-logo.png",
+        "alt": "Deloitte Logo",
+        "maxWidth": "170px",
+        "maxHeight": "170px"
+      }
+    },
+    {
+      "id": "dmi",
+      "type": "job",
+      "company": "Digital Management LLC",
+      "gridArea": "5/1",
+      "background": "linear-gradient(to right, #C52326, #401A47)",
+      "timelineColor": "#C52326",
+      "textColor": "white",
+      "positions": [
+        {
+          "title": "Senior Software Engineer",
+          "dates": "August 2017 - August 2021"
+        }
+      ],
+      "description": [
+        "I served as a Senior Software Consultant at DMI specializing in commercial web application development. I became an invaluable technical lead, designing and executing digital, high-performance solutions for various Fortune 500 companies across the United States.",
+        "I consulted for a Fortune 500 company to rearchitect their main customer-facing application using AWS and microservices. This included developing a microservice architecture using AWS Lambda, SQS, SNS, and DynamoDB. During that period, I became certified at the developer level in AWS infrastructure and in the Scaled Agile Framework. I also consulted for a large car services company where I led a team as the technical lead developing a highly scalable micro-frontend framework in VueJS. This application was the main facing application for one of their largest customers in the car industry and was a template for future customization for other customers. Finally, I consulted for an Indianapolis-based company to re-architect their core engineering product that dictated factory floor sales. This product incorporated the .NET core ecosystem combined with an Angular frontend to create a seamless and user-friendly environment for less experienced engineers."
+      ],
+      "technologies": [
+        { "name": "AWS", "url": "https://aws.amazon.com/", "image": "aws-logo.png", "alt": "Amazon Web Services Logo" },
+        { "name": "Angular", "url": "https://angular.io/", "image": "angular-logo.png", "alt": "Angular Logo" },
+        { "name": "Node.js", "url": "https://nodejs.org/en/", "image": "node-logo.svg", "alt": "Node Logo" },
+        { "name": "Vue.js", "url": "https://vuejs.org/", "image": "vue-logo.png", "alt": "VueJS Logo" },
+        { "name": "C#", "url": "https://docs.microsoft.com/en-us/dotnet/csharp/", "image": "c-sharp-logo.png", "alt": "C# Logo" }
+      ],
+      "companyLogo": {
+        "url": "https://dminc.com/",
+        "image": "dmi-logo.png",
+        "alt": "Digital Management LLC Logo",
+        "maxWidth": "170px",
+        "maxHeight": "170px"
+      }
+    },
+    {
+      "id": "rose-hulman",
+      "type": "education",
+      "company": "Rose-Hulman Institute of Technology",
+      "gridArea": "6/1",
+      "backgroundColor": "white",
+      "timelineColor": "#800000",
+      "textColor": "#000000",
+      "positions": [
+        {
+          "title": "Bachelors of Science in Software Engineering and Computer Science",
+          "dates": "August 2013 - May 2017"
+        }
+      ],
+      "description": [
+        "While attending the Rose-Hulman Institute of Technology, I developed a keen interest in software and digital solutions. I double-majored in Software Engineering and Computer Science and had two minors in Economics and Mathematics and graduated Magna Cum Laude. I also worked part-time in the Rose-Hulman's software department and focused primarily on web application development.",
+        "While at Rose-Hulman, I was also student-athlete on the Varsity Golf team. I proudly competed for my university for 4 years. I represented Rose-Hulman at the conference championships 3 times, played 65 competitive rounds, and finished with an average of 79.4. I was recognized by the Golf Coaches Association of America as an All America Scholar in 2016. Golf was and continues to be a great passion in my life."
+      ],
+      "technologies": [],
+      "companyLogo": {
+        "url": "https://www.rose-hulman.edu/",
+        "image": "rose-hulman-logo.png",
+        "alt": "Rose-Hulman Logo",
+        "maxWidth": "150px",
+        "maxHeight": "150px"
+      }
+    }
+  ],
+  "interests": {
+    "id": "interests",
+    "gridArea": "7/1",
+    "title": "Activities and Interests",
+    "backgroundImage": "golf.png",
+    "items": [
+      {
+        "title": "Photography",
+        "url": "https://www.flickr.com/people/sampastorizaphotos/",
+        "image": "cross-country.png",
+        "alt": "Cross Country",
+        "description": "This is one of my favorite past times. The majority of my photos are posted on Flickr. Check them out by clicking on the image above!"
+      },
+      {
+        "title": "Golf",
+        "url": "https://firsttee.org/",
+        "image": "golf-course.png",
+        "alt": "Streamsong Golf Resort",
+        "description": "I played golf starting at a young age and the love of the game has never left. The First Tee is a wonderful association that teaches young people the game of golf and life skills at the same time. For anyone interested in supporting their organization like I have, click on the image above!"
+      },
+      {
+        "title": "Cooking",
+        "url": "http://lucianocucinaitaliana.com/en/luciano-monosilio-eng/",
+        "image": "carbonara.jpeg",
+        "alt": "Pasta Carbonara by Luciano Monosilio",
+        "description": "I started to really enjoy cooking when living in Indianapolis and had my first apartment. I particularly enjoy French and Italian cuisine. Currently I follow a number of chefs around the world, including Luciano Monosilio (photo credit), Pierre Hermès, Christoph Adam and Ina Garten (bless her cookbooks!)"
+      },
+      {
+        "title": "Music",
+        "url": "https://www.teatroallascala.org/en/index.html",
+        "image": "teatro-alla-scala.jpeg",
+        "alt": "Teatro alla Scala",
+        "description": "Music has always been a part of life, ranging from rock and the Rolling Stones to Giuseppe Verdi's opera masterworks. This year, I have dedicated myself to listening all of Bach's Cantatas masterfully recorded by John Eliot Gardener with the English Baroque Soloists and Monteverdi Choir."
+      }
+    ]
+  }
+}

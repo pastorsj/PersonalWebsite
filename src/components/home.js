@@ -1,22 +1,33 @@
+// src/components/home.js
 import * as React from 'react';
-import GeorgetownSection from './sections/georgetown-section';
-import DmiSection from './sections/dmi-section';
-import RoseHulmanSection from './sections/rose-hulman-section';
+import Timeline from './timeline/timeline';
+import TimelineCard from './timeline/timeline-card';
 import InterestsSection from './sections/interests-section';
-import DeloitteInternSection from './sections/deloitte-intern-section';
-import DeloitteFullTimeSection from './sections/deloitte-full-time-section';
-import NVIDIASection from './sections/nvidia-full-time-section';
+import sectionsData from '../data/sections.json';
 
-const Home = ({ children }) => {
+const Home = () => {
   return (
-    <main role="main" style={{ display: 'grid', width: '100vw', overflowX: 'hidden' }}>
-      <NVIDIASection></NVIDIASection>
-      <DeloitteFullTimeSection></DeloitteFullTimeSection>
-      <GeorgetownSection></GeorgetownSection>
-      <DeloitteInternSection></DeloitteInternSection>
-      <DmiSection></DmiSection>
-      <RoseHulmanSection></RoseHulmanSection>
-      <InterestsSection></InterestsSection>
+    <main
+      role="main"
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        width: '100%',
+        overflowX: 'hidden',
+        backgroundColor: '#f8f9fa'
+      }}
+    >
+      {/* Timeline section */}
+      <section style={{ padding: '4rem 0' }}>
+        <Timeline>
+          {sectionsData.sections.map((section, index) => (
+            <TimelineCard key={section.id} section={section} index={index} />
+          ))}
+        </Timeline>
+      </section>
+
+      {/* Interests section */}
+      <InterestsSection />
     </main>
   );
 };

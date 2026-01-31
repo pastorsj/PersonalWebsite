@@ -1,0 +1,140 @@
+/* src/styles/animations.css */
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Fade in and slide up animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Subtle scale animation for profile photo */
+@keyframes subtleScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Animation classes */
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: subtleScale 0.6s ease-out forwards;
+}
+
+/* Staggered delays for hero content */
+.delay-100 {
+  animation-delay: 0.1s;
+  opacity: 0;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+  opacity: 0;
+}
+
+.delay-400 {
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+
+/* Scroll-triggered animation (initially hidden) */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Timeline-specific scroll animations */
+.timeline-card-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.timeline-card-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.timeline-card-left.visible,
+.timeline-card-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Mobile: all cards slide up */
+@media (max-width: 768px) {
+  .timeline-card-left,
+  .timeline-card-right {
+    transform: translateY(20px);
+  }
+
+  .timeline-card-left.visible,
+  .timeline-card-right.visible {
+    transform: translateY(0);
+  }
+}
+
+/* Accessibility: Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in,
+  .animate-fade-in-up,
+  .animate-scale-in {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .delay-100,
+  .delay-200,
+  .delay-300,
+  .delay-400 {
+    animation-delay: 0s;
+    opacity: 1;
+  }
+
+  .animate-on-scroll,
+  .timeline-card-left,
+  .timeline-card-right {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
