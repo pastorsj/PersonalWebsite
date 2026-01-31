@@ -4,29 +4,35 @@ on:
   push:
     branches:
       - main
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
+
       - name: Use Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: 'npm'
+
       - name: Build
         run: |
           npm ci
           npm run build
+
       - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
           aws-region: ${{ secrets.AWS_S3_REGION }}
+
       - name: Deploy
-        uses: jonelantha/gatsby-s3-action@v1
+        uses: jonelantha/gatsby-s3-action@v3
         with:
           dest-s3-bucket: ${{ secrets.AWS_S3_BUCKET }}
           cloudfront-id-to-invalidate: ${{ secrets.AWS_CLOUDFRONT_ID }}
